@@ -1,0 +1,12 @@
+/Users/brwalker/Documents/Source/tesla-inventory-net/src/bin/Debug/net5.0/TeslaInventoryNet.deps.json
+/Users/brwalker/Documents/Source/tesla-inventory-net/src/bin/Debug/net5.0/TeslaInventoryNet.dll
+/Users/brwalker/Documents/Source/tesla-inventory-net/src/bin/Debug/net5.0/ref/TeslaInventoryNet.dll
+/Users/brwalker/Documents/Source/tesla-inventory-net/src/bin/Debug/net5.0/TeslaInventoryNet.pdb
+/Users/brwalker/Documents/Source/tesla-inventory-net/src/obj/Debug/net5.0/TeslaInventoryNet.csproj.AssemblyReference.cache
+/Users/brwalker/Documents/Source/tesla-inventory-net/src/obj/Debug/net5.0/TeslaInventoryNet.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brwalker/Documents/Source/tesla-inventory-net/src/obj/Debug/net5.0/TeslaInventoryNet.AssemblyInfoInputs.cache
+/Users/brwalker/Documents/Source/tesla-inventory-net/src/obj/Debug/net5.0/TeslaInventoryNet.AssemblyInfo.cs
+/Users/brwalker/Documents/Source/tesla-inventory-net/src/obj/Debug/net5.0/TeslaInventoryNet.csproj.CoreCompileInputs.cache
+/Users/brwalker/Documents/Source/tesla-inventory-net/src/obj/Debug/net5.0/TeslaInventoryNet.dll
+/Users/brwalker/Documents/Source/tesla-inventory-net/src/obj/Debug/net5.0/ref/TeslaInventoryNet.dll
+/Users/brwalker/Documents/Source/tesla-inventory-net/src/obj/Debug/net5.0/TeslaInventoryNet.pdb
