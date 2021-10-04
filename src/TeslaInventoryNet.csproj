@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <id>TeslaInventoryNet</id>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <GeneratePackageOnBuild Condition="'$(Configuration)' == 'Release'">true</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Authors>Brad Walker (@braddwalker)</Authors>
