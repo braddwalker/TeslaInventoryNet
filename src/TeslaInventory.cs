@@ -47,9 +47,6 @@ namespace TeslaInventoryNet
             }
 
             var results = JsonConvert.DeserializeAnonymousType(response.Content, new { results = new Result[0], total_matches_found = 0});
-
-            Console.WriteLine(response.Content);
-
             return results.results;
         }
     }
