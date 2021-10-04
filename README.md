@@ -1,5 +1,7 @@
 > Retrieves real-time inventory from Tesla.
 
+![Last version](https://img.shields.io/github/tag/braddwalker/TeslaInventoryNet.svg?style=flat-square)
+
 ## Usage
 
 ```c#
