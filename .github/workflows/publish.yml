@@ -15,9 +15,9 @@ jobs:
       - name: Install dependencies
         run: dotnet restore
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build test/ --configuration Release --no-restore
       - name: Test
-        run: dotnet test --no-restore --verbosity normal
+        run: dotnet test test/ --no-restore --verbosity normal
   publish:
     name: build, pack & publish
     runs-on: ubuntu-latest
