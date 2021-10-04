@@ -22,4 +22,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
     <PackageReference Include="RestSharp" Version="106.12.0"/>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\readme.md" Pack="true" PackagePath="" />
+  </ItemGroup>
 </Project>
