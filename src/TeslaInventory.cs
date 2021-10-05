@@ -52,6 +52,7 @@ namespace TeslaInventoryNet
                 }
             };
 
+            // Perform the API call
             var client = new RestClient(TESLA_API);
             var request = new RestRequest();
             request.AddParameter("query", JsonConvert.SerializeObject(query));
