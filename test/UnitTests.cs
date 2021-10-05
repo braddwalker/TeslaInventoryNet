@@ -19,6 +19,14 @@ namespace TeslaInventoryNet.Test
         }
 
         [TestMethod]
+        public void Search_US_New_Delegate_NotNull()
+        {
+            TeslaInventory.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "new"}, (results) => {
+                Assert.IsNotNull(results);
+            });
+        }
+
+        [TestMethod]
         public void Search_Invalid_Model()
         {
             Assert.IsNotNull(TeslaInventory.Search(Location.US, new SearchCriteria() { Model = "foo", Condition = "used"}));

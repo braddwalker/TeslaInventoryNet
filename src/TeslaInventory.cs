@@ -1,8 +1,9 @@
-using System.Collections.Generic;
-using System.Net;
-using RestSharp;
 using Newtonsoft.Json;
+using RestSharp;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
 
 namespace TeslaInventoryNet
 {
@@ -11,14 +12,35 @@ namespace TeslaInventoryNet
     /// </summary>
     public class TeslaInventory
     {
+        // The public Tesla inventory API
         private static readonly string TESLA_API = "https://www.tesla.com/inventory/api/v1/inventory-results";
+
+        /// <summary>
+        /// Delegate to process all of the search results at once
+        /// </summary>
+        /// <param name="results">A <c>IList<Result></c> collection</param>
+        public delegate void ResultsAction(IList<Result> results);
 
         /// <summary>
         /// Performs a search based on the provided filter criteria.
         /// </summary>
+        /// <param name="location">The geographic location to search</param>
+        /// <param name="criteria">The search criteria to use</param>
+        /// <param name="action">The delegate to process results</param>
+        public static void Search(Location location, SearchCriteria criteria, ResultsAction action)
+        {
+            action(Search(location, criteria));
+        }
+
+        /// <summary>
+        /// Performs a search based on the provided filter criteria.
+        /// </summary>
+        /// <param name="location">The geographic location to search</param>
+        /// <param name="criteria">The search criteria to use</param>
         /// <returns>A list of search results</returns>
         public static IList<Result> Search(Location location, SearchCriteria criteria)
         {
+            // build the querystring
             var query = new {
                 query = new {
                     model = criteria.Model,
@@ -37,17 +59,18 @@ namespace TeslaInventoryNet
 
             if (response == null)
             {
-                throw new Exception("Unable to call Tesla API");
+                throw new Exception("Error calling Tesla API - null response");
             }
 
+            // Check for API errors first
             var error = JsonConvert.DeserializeAnonymousType(response.Content, new { Error = "", Code = 0});
             if (error.Code > 0)
             {
                 throw new Exception($"Error calling Tesla API - {error.Code}: {error.Error} - {JsonConvert.SerializeObject(query)}");
             }
 
-            var results = JsonConvert.DeserializeAnonymousType(response.Content, new { results = new Result[0], total_matches_found = 0});
-            return results.results;
+            // Deserialize the actual results and return the relevant portion
+            return JsonConvert.DeserializeAnonymousType(response.Content, new { results = new Result[0], total_matches_found = 0}).results;
         }
     }
 }
