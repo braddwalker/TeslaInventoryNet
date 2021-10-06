@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Linq;
 using TeslaInventoryNet;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 
 namespace TeslaInventoryNet.Demo
 {
@@ -8,13 +10,21 @@ namespace TeslaInventoryNet.Demo
     {
         static void Main(string[] args)
         {
-            TeslaInventory.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "used"},
+            var loggerFactory = LoggerFactory.Create(builder => {
+                builder.AddConsole();
+                builder.AddFilter(level => level >= LogLevel.Debug);
+            });
+
+            var logger = loggerFactory.CreateLogger<Program>();
+            var tesla = new TeslaInventory(loggerFactory.CreateLogger<TeslaInventory>());
+
+            tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "used"},
                 (results) => {
-                    Console.WriteLine($"Found {results.Count} vehicles");
+                    logger.LogInformation($"Found {results.Count} vehicles");
                     
                     foreach (var result in results)
                     {
-                        Console.WriteLine($"\nhttps://www.tesla.com/{result.Model}/order/{result.Vin}"
+                        logger.LogInformation($"https://www.tesla.com/{result.Model}/order/{result.Vin}"
                                     + $"\n{result.Year} {result.Model}"
                                     + $"\n{result.TrimName}" + (result.IsDemo ? " Demo" : "")
                                     + $"\n{result.Options.Where(x => x.Group == "PAINT").Select(x => x.Name).FirstOrDefault()}"
