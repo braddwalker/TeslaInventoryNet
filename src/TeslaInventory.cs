@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Runtime.InteropServices;
 
 namespace TeslaInventoryNet
 {
@@ -17,6 +18,7 @@ namespace TeslaInventoryNet
         private static readonly string TESLA_API = "https://www.tesla.com/inventory/api/v1/inventory-results";
 
         private readonly ILogger<TeslaInventory> logger;
+        private IRestClient client = null;
 
         /// <summary>
         /// Delegate to process all of the search results at once
@@ -24,9 +26,16 @@ namespace TeslaInventoryNet
         /// <param name="results">A <c>IList<Result></c> collection</param>
         public delegate void ResultsAction(IList<Result> results);
 
-        public TeslaInventory(ILogger<TeslaInventory> logger)
+        /// <summary>
+        /// Default constructor
+        /// </summary>
+        /// <param name="logger">The logger to use</param>
+        /// <param name="client">An optional <c>IRestClient</c> implementation</param>
+        /// <returns></returns>
+        public TeslaInventory(ILogger<TeslaInventory> logger, [Optional] IRestClient client)
         {
             this.logger = logger;
+            this.client = client ?? new RestClient();
         }
 
         /// <summary>
@@ -63,7 +72,7 @@ namespace TeslaInventoryNet
             logger.LogDebug($"Query: {query}");
 
             // Perform the API call
-            var client = new RestClient(TESLA_API);
+            client.BaseUrl = new Uri(TESLA_API);
             var request = new RestRequest();
             request.AddParameter("query", query);
             var response = client.Execute(request);
@@ -76,15 +85,16 @@ namespace TeslaInventoryNet
             if (response.StatusCode != HttpStatusCode.OK)
             {
                 logger.LogDebug($"StatusCode: {response.StatusCode} - {response.ErrorMessage}");
-                throw new Exception(response.ErrorMessage);
+                throw new Exception($"{response.StatusCode} - {response.ErrorMessage}");
             }
             else 
             {
+                logger.LogDebug(response.Content);
+
                 // Check for API errors first
                 var error = JsonConvert.DeserializeAnonymousType(response.Content, new { Error = "", Code = 0});
                 if (error.Code > 0)
                 {
-                    logger.LogDebug($"Error: {error.Code} - {error.Error}");
                     throw new Exception($"Error calling Tesla API - {error.Code}: {error.Error} - {JsonConvert.SerializeObject(query)}");
                 }
 

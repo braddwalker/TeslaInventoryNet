@@ -1,7 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TeslaInventoryNet;
 using Moq;
 using Microsoft.Extensions.Logging;
+using RestSharp;
+using System;
+using System.Net;
+using Newtonsoft.Json;
 
 namespace TeslaInventoryNet.Test
 {
@@ -19,6 +22,19 @@ namespace TeslaInventoryNet.Test
         public void Initialize()
         {
             tesla = new TeslaInventory(CreateLogger());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception))]
+        public void Search_Invalid_Location()
+        {
+            Assert.IsNotNull(tesla.Search(new Location()
+            {
+                Country = "foo",
+                Language = "foo",
+                Market = "foo",
+                Region = "foo"
+            }, new SearchCriteria() { Model = "m3", Condition = "new"}));
         }
 
         [TestMethod]
@@ -51,6 +67,46 @@ namespace TeslaInventoryNet.Test
         public void Search_Invalid_Condition()
         {
             Assert.IsNotNull(tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "foo"}));
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception))]
+        public void Search_Null_Response()
+        {
+            var client = new Mock<IRestClient>();
+            client.Setup(x => x.Execute(It.IsAny<IRestRequest>())).Returns<IRestResponse>(null);
+
+            tesla = new TeslaInventory(CreateLogger(), client.Object);   
+            tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "foo"});
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception))]
+        public void Search_Invalid_HTTP_Response()
+        {
+            var response = new Mock<IRestResponse>();
+            response.Setup(x => x.StatusCode).Returns(HttpStatusCode.NotFound);
+
+            var client = new Mock<IRestClient>();
+            client.Setup(x => x.Execute(It.IsAny<IRestRequest>())).Returns(response.Object);
+
+            tesla = new TeslaInventory(CreateLogger(), client.Object);   
+            tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "foo"});
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception))]
+        public void Search_Invalid_API_Error()
+        {
+            var response = new Mock<IRestResponse>();
+            response.Setup(x => x.StatusCode).Returns(HttpStatusCode.OK);
+            response.Setup(x => x.Content).Returns(JsonConvert.SerializeObject(new { Error = "Test error", Code = 100}));
+
+            var client = new Mock<IRestClient>();
+            client.Setup(x => x.Execute(It.IsAny<IRestRequest>())).Returns(response.Object);
+
+            tesla = new TeslaInventory(CreateLogger(), client.Object);   
+            tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "foo"});
         }
     }
 }
