@@ -17,6 +17,7 @@ namespace TeslaInventoryNet
         public string StateProvince { get; set; }
         public long Odometer { get; set; }
         public string OdometerType { get; set; }
+        public string FactoryCode {get; set;}
 
         [JsonProperty("OptionCodeData")]
         public OptionCode[] Options { get; set; }

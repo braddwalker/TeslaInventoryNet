@@ -29,6 +29,7 @@ namespace TeslaInventoryNet.Demo
                                     + $"\n{result.TrimName}" + (result.IsDemo ? " Demo" : "")
                                     + $"\n{result.Options.Where(x => x.Group == "PAINT").Select(x => x.Name).FirstOrDefault()}"
                                     + (result.Autopilot.Contains("AUTOPILOT_FULL_SELF_DRIVING") ? "\nFull Self-Driving Capability" : "")
+                                    + $"\nFactory: {result.FactoryCode}"
                                     + $"\n{result.City}, {result.StateProvince}");
                     }
                 });
