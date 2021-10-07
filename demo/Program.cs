@@ -30,7 +30,8 @@ namespace TeslaInventoryNet.Demo
                                     + $"\n{result.OptionCodeData.Where(x => x.Group == "PAINT").Select(x => x.Name).FirstOrDefault()}"
                                     + (result.Autopilot.Contains("AUTOPILOT_FULL_SELF_DRIVING") ? "\nFull Self-Driving Capability" : "")
                                     + $"\nFactory: {result.FactoryCode}"
-                                    + $"\n{result.City}, {result.StateProvince}");
+                                    + $"\n{result.City}, {result.StateProvince}"
+                                    + $"\nhttps://static-assets.tesla.com/v1/compositor/?model={result.Model}&view={result.CompositorViews.FrontView}&size=1441&bkba_opt=2&options={string.Join(',', result.OptionCodeData.Select(x => x.Code))}");
                     }
                 });
         }

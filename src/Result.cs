@@ -33,7 +33,7 @@ namespace TeslaInventoryNet
         public string Name { get; set; }
         
         [JsonProperty("price")]
-        public int? Price { get; set; }
+        public int Price { get; set; }
     }
 
     public class LexiconDefaultOption
@@ -57,34 +57,34 @@ namespace TeslaInventoryNet
     public class DownPayment
     {
         [JsonProperty("downPaymentAmount")]
-        public int? DownPaymentAmount { get; set; }
+        public int DownPaymentAmount { get; set; }
 
         [JsonProperty("downPaymentPercent")]
         public double DownPaymentPercent { get; set; }
 
         [JsonProperty("normalizedMaximumDownPayment")]
-        public int? NormalizedMaximumDownPayment { get; set; }
+        public int NormalizedMaximumDownPayment { get; set; }
 
         [JsonProperty("normalizedMinimumDownPayment")]
-        public int? NormalizedMinimumDownPayment { get; set; }
+        public int NormalizedMinimumDownPayment { get; set; }
     }
 
     public class Loan
     {
         [JsonProperty("DNBAdminFee")]
-        public int? DNBAdminFee { get; set; }
+        public int DNBAdminFee { get; set; }
 
         [JsonProperty("DNBLoanFee")]
-        public int? DNBLoanFee { get; set; }
+        public int DNBLoanFee { get; set; }
 
         [JsonProperty("amountDueAtSigning")]
-        public int? AmountDueAtSigning { get; set; }
+        public int AmountDueAtSigning { get; set; }
 
         [JsonProperty("balloonPayment")]
-        public int? BalloonPayment { get; set; }
+        public int BalloonPayment { get; set; }
 
         [JsonProperty("balloonPaymentPercent")]
-        public int? BalloonPaymentPercent { get; set; }
+        public int BalloonPaymentPercent { get; set; }
 
         [JsonProperty("costOfCredit")]
         public int? CostOfCredit { get; set; }
@@ -99,28 +99,28 @@ namespace TeslaInventoryNet
         public string EffectiveRateAverage { get; set; }
 
         [JsonProperty("financedAmount")]
-        public int? FinancedAmount { get; set; }
+        public int FinancedAmount { get; set; }
 
         [JsonProperty("financedAmountInclFees")]
-        public int? FinancedAmountInclFees { get; set; }
+        public int FinancedAmountInclFees { get; set; }
 
         [JsonProperty("insuranceAmt")]
-        public int? InsuranceAmt { get; set; }
+        public int InsuranceAmt { get; set; }
 
         [JsonProperty("interestRate")]
         public double InterestRate { get; set; }
 
         [JsonProperty("maxballoonPaymentAmount")]
-        public int? MaxballoonPaymentAmount { get; set; }
+        public int MaxballoonPaymentAmount { get; set; }
 
         [JsonProperty("maximumBalloonPayment")]
-        public int? MaximumBalloonPayment { get; set; }
+        public int MaximumBalloonPayment { get; set; }
 
         [JsonProperty("minimumBalloonPayment")]
-        public int? MinimumBalloonPayment { get; set; }
+        public int MinimumBalloonPayment { get; set; }
 
         [JsonProperty("monthlyPayment")]
-        public int? MonthlyPayment { get; set; }
+        public int MonthlyPayment { get; set; }
 
         [JsonProperty("netMonthlyPayment")]
         public int? NetMonthlyPayment { get; set; }
@@ -132,13 +132,13 @@ namespace TeslaInventoryNet
         public string[] Regional { get; set; }
 
         [JsonProperty("residualAmount")]
-        public int? ResidualAmount { get; set; }
+        public int ResidualAmount { get; set; }
 
         [JsonProperty("residualValueRate")]
-        public int? ResidualValueRate { get; set; }
+        public int ResidualValueRate { get; set; }
 
         [JsonProperty("term")]
-        public int? Term { get; set; }
+        public int Term { get; set; }
     }
 
     public class LoanDetails
@@ -165,7 +165,7 @@ namespace TeslaInventoryNet
         public string Group { get; set; }
 
         [JsonProperty("price")]
-        public int? Price { get; set; }
+        public int Price { get; set; }
 
         [JsonProperty("unit_long")]
         public string UnitLong { get; set; }
@@ -198,7 +198,7 @@ namespace TeslaInventoryNet
         public string Group { get; set; }
 
         [JsonProperty("price")]
-        public int? Price { get; set; }
+        public int Price { get; set; }
     }
 
     public class OrderFee
@@ -207,13 +207,13 @@ namespace TeslaInventoryNet
         public string Type { get; set; }
 
         [JsonProperty("value")]
-        public int? Value { get; set; }
+        public int Value { get; set; }
     }
 
     public class Query
     {
         [JsonProperty("max")]
-        public int? Max { get; set; }
+        public int Max { get; set; }
 
         [JsonProperty("min")]
         public double Min { get; set; }
@@ -222,7 +222,7 @@ namespace TeslaInventoryNet
     public class Fee
     {
         [JsonProperty("amount")]
-        public int? Amount { get; set; }
+        public int Amount { get; set; }
 
         [JsonProperty("condition")]
         public string Condition { get; set; }
@@ -240,7 +240,7 @@ namespace TeslaInventoryNet
     public class MetroFee
     {
         [JsonProperty("amount")]
-        public int? Amount { get; set; }
+        public int Amount { get; set; }
 
         [JsonProperty("destination_metro")]
         public string DestinationMetro { get; set; }
@@ -263,19 +263,19 @@ namespace TeslaInventoryNet
 
     public class WarrantyData
     {
-        public int? UsedVehicleLimitedWarrantyMile { get; set; }
-        public int? UsedVehicleLimitedWarrantyYear { get; set; }
+        public int UsedVehicleLimitedWarrantyMile { get; set; }
+        public int UsedVehicleLimitedWarrantyYear { get; set; }
         public DateTime? WarrantyBatteryExpDate { get; set; }
         public bool WarrantyBatteryIsExpired { get; set; }
-        public int? WarrantyBatteryMile { get; set; }
-        public int? WarrantyBatteryYear { get; set; }
+        public int WarrantyBatteryMile { get; set; }
+        public int WarrantyBatteryYear { get; set; }
         public DateTime? WarrantyDriveUnitExpDate { get; set; }
-        public int? WarrantyDriveUnitMile { get; set; }
-        public int? WarrantyDriveUnitYear { get; set; }
-        public int? WarrantyMile { get; set; }
+        public int WarrantyDriveUnitMile { get; set; }
+        public int WarrantyDriveUnitYear { get; set; }
+        public int WarrantyMile { get; set; }
         public DateTime? WarrantyVehicleExpDate { get; set; }
         public bool WarrantyVehicleIsExpired { get; set; }
-        public int? WarrantyYear { get; set; }
+        public int WarrantyYear { get; set; }
     }
 
     public class Option
@@ -335,7 +335,7 @@ namespace TeslaInventoryNet
         public double Order { get; set; }
         
         [JsonProperty("details")]
-        public int? Details { get; set; }
+        public int Details { get; set; }
 
         [JsonProperty("search")]
         public double Search { get; set; }
@@ -383,9 +383,9 @@ namespace TeslaInventoryNet
         [JsonProperty("DRIVE")]
         public string[] Drive { get; set; }
         public bool Decommissioned { get; set; }
-        public int? DestinationHandlingFee { get; set; }
-        public int? Discount { get; set; }
-        public int? DiscountPercentages { get; set; }
+        public int DestinationHandlingFee { get; set; }
+        public int Discount { get; set; }
+        public int DiscountPercentages { get; set; }
         public bool DisplayWarranty { get; set; }
         public DateTime? DocumentSyncDate { get; set; }
         public DateTime? EtaToCurrent { get; set; }
@@ -402,7 +402,7 @@ namespace TeslaInventoryNet
         [JsonProperty("INTERIOR")]
         public string[] Interior { get; set; }
         public string InspectionDocumentGuid { get; set; }
-        public int? InventoryPrice { get; set; }
+        public int InventoryPrice { get; set; }
         public bool IsAvailableForMatch { get; set; }
         public bool IsDemo { get; set; }
         public bool IsLegacy { get; set; }
@@ -421,7 +421,7 @@ namespace TeslaInventoryNet
         public DateTime? MarketingInUseDate { get; set; }
         public string MatchType { get; set; }
         public string Model { get; set; }
-        public int? MonroneyPrice { get; set; }
+        public int MonroneyPrice { get; set; }
         public bool NeedsReview { get; set; }
         public string OdometerType { get; set; }
         public OptionCodeData[] OptionCodeData { get; set; }
@@ -436,8 +436,8 @@ namespace TeslaInventoryNet
         public string[] Paint { get; set; }
         public DateTime? PlannedGADailyDate { get; set; }
         public string PreownedWarrantyEligibility { get; set; }
-        public int? Price { get; set; }
-        public int? PurchasePrice { get; set; }
+        public int Price { get; set; }
+        public int PurchasePrice { get; set; }
 
         [JsonProperty("ROOF")]
         public string[] Roof { get; set; }
@@ -456,11 +456,11 @@ namespace TeslaInventoryNet
         public DateTime? TitleReceivedOwnershipTransferDate { get; set; }
         public string TitleStatus { get; set; }
         public string[] TitleSubtype { get; set; }
-        public int? TotalPrice { get; set; }
+        public int TotalPrice { get; set; }
         public TransportFees TransportFees { get; set; }
         public string TrimCode { get; set; }
         public string TrimName { get; set; }
-        public int? Trt { get; set; }
+        public int Trt { get; set; }
         public string TrtName { get; set; }
         public DateTime? UsedVehiclePhotosCompletedDate { get; set; }
 
@@ -475,22 +475,22 @@ namespace TeslaInventoryNet
         public string[] Wheels { get; set; }
         public DateTime? WarrantyBatteryExpDate { get; set; }
         public bool WarrantyBatteryIsExpired { get; set; }
-        public int? WarrantyBatteryMile { get; set; }
-        public int? WarrantyBatteryYear { get; set; }
+        public int WarrantyBatteryMile { get; set; }
+        public int WarrantyBatteryYear { get; set; }
         public WarrantyData WarrantyData { get; set; }
         public DateTime? WarrantyDriveUnitExpDate { get; set; }
-        public int? WarrantyDriveUnitMile { get; set; }
-        public int? WarrantyDriveUnitYear { get; set; }
-        public int? WarrantyMile { get; set; }
+        public int WarrantyDriveUnitMile { get; set; }
+        public int WarrantyDriveUnitYear { get; set; }
+        public int WarrantyMile { get; set; }
         public DateTime? WarrantyVehicleExpDate { get; set; }
         public bool WarrantyVehicleIsExpired { get; set; }
-        public int? WarrantyYear { get; set; }
-        public int? Year { get; set; }
-        public int? UsedVehicleLimitedWarrantyMile { get; set; }
-        public int? UsedVehicleLimitedWarrantyYear { get; set; }
+        public int WarrantyYear { get; set; }
+        public int Year { get; set; }
+        public int UsedVehicleLimitedWarrantyMile { get; set; }
+        public int UsedVehicleLimitedWarrantyYear { get; set; }
         public bool DeliveryDateDisplay { get; set; }
         public string Hash { get; set; }
-        public int? Odometer { get; set; }
+        public int Odometer { get; set; }
         public OptionCodeSpecs OptionCodeSpecs { get; set; }
         public CompositorViewsCustom CompositorViewsCustom { get; set; }
         public bool IsRangeStandard { get; set; }
