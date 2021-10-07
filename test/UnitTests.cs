@@ -28,13 +28,19 @@ namespace TeslaInventoryNet.Test
         [ExpectedException(typeof(Exception))]
         public void Search_Invalid_Location()
         {
-            Assert.IsNotNull(tesla.Search(new Location()
+            tesla.Search(new Location()
             {
                 Country = "foo",
                 Language = "foo",
                 Market = "foo",
                 Region = "foo"
-            }, new SearchCriteria() { Model = "m3", Condition = "new"}));
+            }, new SearchCriteria() { Model = "m3", Condition = "new"});
+        }
+
+        [TestMethod]
+        public void Search_Invalid_Count()
+        {
+            Assert.IsNotNull(tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "new", Count = 10000000}));
         }
 
         [TestMethod]

@@ -18,16 +18,16 @@ namespace TeslaInventoryNet.Demo
             var logger = loggerFactory.CreateLogger<Program>();
             var tesla = new TeslaInventory(loggerFactory.CreateLogger<TeslaInventory>());
 
-            tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "used"},
+            tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "used", Count = 100},
                 (results) => {
-                    logger.LogInformation($"Found {results.Count} vehicles");
+                    logger.LogInformation($"Found {results.TotalMatchesFound} vehicles total, {results.Vehicles.Length} vehicles returned");
                     
-                    foreach (var result in results)
+                    foreach (var result in results.Vehicles)
                     {
                         logger.LogInformation($"https://www.tesla.com/{result.Model}/order/{result.Vin}"
                                     + $"\n{result.Year} {result.Model}"
                                     + $"\n{result.TrimName}" + (result.IsDemo ? " Demo" : "")
-                                    + $"\n{result.Options.Where(x => x.Group == "PAINT").Select(x => x.Name).FirstOrDefault()}"
+                                    + $"\n{result.OptionCodeData.Where(x => x.Group == "PAINT").Select(x => x.Name).FirstOrDefault()}"
                                     + (result.Autopilot.Contains("AUTOPILOT_FULL_SELF_DRIVING") ? "\nFull Self-Driving Capability" : "")
                                     + $"\nFactory: {result.FactoryCode}"
                                     + $"\n{result.City}, {result.StateProvince}");
