@@ -3,7 +3,6 @@ using Newtonsoft.Json;
 using RestSharp;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Runtime.InteropServices;
 
@@ -24,7 +23,7 @@ namespace TeslaInventoryNet
         /// Delegate to process all of the search results at once
         /// </summary>
         /// <param name="results">A <c>IList<Result></c> collection</param>
-        public delegate void ResultsAction(IList<Result> results);
+        public delegate void ResultsAction(SearchResult results);
 
         /// <summary>
         /// Default constructor
@@ -55,7 +54,7 @@ namespace TeslaInventoryNet
         /// <param name="location">The geographic location to search</param>
         /// <param name="criteria">The search criteria to use</param>
         /// <returns>A list of search results</returns>
-        public IList<Result> Search(Location location, SearchCriteria criteria)
+        public SearchResult Search(Location location, SearchCriteria criteria)
         {
             // build the querystring
             var query = JsonConvert.SerializeObject(new {
@@ -66,7 +65,9 @@ namespace TeslaInventoryNet
                     market = location.Market,
                     language = location.Language,
                     region = location.Region
-                }
+                },
+                offset = criteria.Offset,
+                count = criteria.Count
             });
 
             logger.LogDebug($"Query: {query}");
@@ -89,7 +90,7 @@ namespace TeslaInventoryNet
             }
             else 
             {
-                logger.LogDebug(response.Content);
+                //logger.LogDebug(response.Content);
 
                 // Check for API errors first
                 var error = JsonConvert.DeserializeAnonymousType(response.Content, new { Error = "", Code = 0});
@@ -99,7 +100,7 @@ namespace TeslaInventoryNet
                 }
 
                 // Deserialize the actual results and return the relevant portion
-                return JsonConvert.DeserializeAnonymousType(response.Content, new { results = new Result[0], total_matches_found = 0}).results;
+                return JsonConvert.DeserializeObject<SearchResult>(response.Content);
             }
         }
     }

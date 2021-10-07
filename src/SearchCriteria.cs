@@ -11,5 +11,15 @@ namespace TeslaInventoryNet
         /// The condition to search for. Valid values are: new, used
         /// </summary>
         public string Condition {get; set;}
+
+        /// <summary>
+        /// The number of search results to return 
+        /// </summary>
+        public int Count {get; set;}
+
+        /// <summary>
+        /// For paging, the offset of the total search results to start returning data for
+        /// </summary>
+        public int Offset {get; set;}
     }
 }

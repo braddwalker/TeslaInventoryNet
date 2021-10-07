@@ -1,0 +1,647 @@
+{
+    "results": [
+      {
+        "InTransit": false,
+        "ADL_OPTS": [
+          "PERFORMANCE_UPGRADE",
+          "REAR_HEATED_SEATS"
+        ],
+        "AUTOPILOT": [
+          "AUTOPILOT"
+        ],
+        "ActualGAInDate": "2021-09-22T10:59:02",
+        "AddToInventoryReason": null,
+        "BATTERY": null,
+        "CABIN_CONFIG": null,
+        "CPORefurbishmentStatus": null,
+        "CPOWarrantyType": null,
+        "City": "RENTON",
+        "CompositorViews": {
+          "frontView": "STUD_3QTR",
+          "sideView": "SIDE",
+          "interiorView": "STUD_SEAT"
+        },
+        "CountryCode": "US",
+        "CountryCodes": [
+          "US"
+        ],
+        "CountryOfOrigin": "US",
+        "CurrencyCode": "USD",
+        "CurrencyCodes": "USD",
+        "DECOR": null,
+        "DRIVE": null,
+        "Decommissioned": false,
+        "DestinationHandlingFee": 0,
+        "Discount": 0,
+        "DiscountPercentages": 0,
+        "DisplayWarranty": false,
+        "DocumentSyncDate": "2021-10-07T15:21:45.9161838Z",
+        "EtaToCurrent": "2021-09-29T18:57:31",
+        "FactoryCode": "GF00",
+        "FixedAssets": false,
+        "FlexibleOptionsData": [
+          {
+            "code": "$APF2",
+            "description": "Full Self-Driving Capability",
+            "group": "AUTOPILOT",
+            "long_name": "Full Self-Driving Capability",
+            "name": "Full Self-Driving Capability",
+            "price": 10000
+          }
+        ],
+        "HEADLINER": null,
+        "HOVStatus": null,
+        "HasDamagePhotos": false,
+        "HasOptionCodeData": true,
+        "INTERIOR": [
+          "PREMIUM_WHITE"
+        ],
+        "InspectionDocumentGuid": null,
+        "InventoryPrice": 59990,
+        "IsAvailableForMatch": true,
+        "IsDemo": false,
+        "IsLegacy": false,
+        "IsSoftMatched": false,
+        "IsTegra": false,
+        "Language": "en",
+        "Languages": [
+          "en"
+        ],
+        "LastTransformationSuccess": true,
+        "LeaseAvailabilityDate": null,
+        "LexiconDefaultOptions": [
+          {
+            "code": "$CPF0",
+            "description": "Standard Connectivity",
+            "group": "CONNECTIVITY",
+            "long_name": "Standard Connectivity",
+            "name": "Standard Connectivity"
+          },
+          {
+            "code": "$SC04",
+            "description": "Supercharger Network Access + Pay-as-you-go",
+            "group": "SUPER_CHARGER",
+            "long_name": "Supercharger Network Access + Pay-as-you-go",
+            "name": "Supercharger Network Access + Pay-as-you-go"
+          }
+        ],
+        "ListingReasons": "NO_ADJ_LOW_MILES_US",
+        "ListingType": "public",
+        "ListingTypes": "public",
+        "LoanDetails": {
+          "loan": {
+            "DNBAdminFee": 0,
+            "DNBLoanFee": 0,
+            "amountDueAtSigning": 4500,
+            "balloonPayment": 0,
+            "balloonPaymentPercent": 0,
+            "costOfCredit": null,
+            "downPayment": {
+              "downPaymentAmount": 4500,
+              "downPaymentPercent": 0.074,
+              "normalizedMaximumDownPayment": 51190,
+              "normalizedMinimumDownPayment": 0
+            },
+            "effectiveRate": 2.49,
+            "effectiveRateAverage": "11.90",
+            "financedAmount": 56690,
+            "financedAmountInclFees": 56690,
+            "insuranceAmt": 0,
+            "interestRate": 2.49,
+            "maxballoonPaymentAmount": 0,
+            "maximumBalloonPayment": 0,
+            "minimumBalloonPayment": 0,
+            "monthlyPayment": 848,
+            "netMonthlyPayment": null,
+            "nominalRate": 2.46,
+            "regional": [],
+            "residualAmount": 0,
+            "residualValueRate": 0,
+            "term": 72
+          }
+        },
+        "ManufacturingOptionCodeList": "AD15,AF00,APFB,APH4,AU3P,BC3R,BT42,CDM0,CH16,COUS,DRLH,DV4W,FC02,FG31,FM3P,GLFR,HL32,HM30,ID3A,IL31,LT03,MDL3,MR31,PMNG,PC31,RENA,RF3G,RS3H,S3PW,SA3P,SC04,STCP,SU3C,T3P3,TM00,TW00,UT3P,W33D,WR00,ZINV,MI02,PL31,SLR1,ST33,BG32,I38M,USSB,AUF1,RSF1,ILF1,FGF1,CPF0,P3WS,HP31,PT01,RL31,FD00,RD02,SWF1,RA00,VC00",
+        "MarketingInUseDate": null,
+        "MatchType": "AUTO",
+        "Model": "m3",
+        "MonroneyPrice": 61190,
+        "NeedsReview": false,
+        "OdometerType": "Miles",
+        "OptionCodeData": [
+          {
+            "acceleration_unit_long": "miles per hour",
+            "acceleration_unit_short": "mph",
+            "acceleration_value": "0-60",
+            "code": "$MT317",
+            "group": "SPECS_ACCELERATION",
+            "price": 22990,
+            "unit_long": "seconds",
+            "unit_short": "sec",
+            "value": "3.1"
+          },
+          {
+            "code": "$MT317",
+            "group": "SPECS_TOP_SPEED",
+            "price": 22990,
+            "unit_long": "miles per hour",
+            "unit_short": "mph",
+            "value": "162"
+          },
+          {
+            "code": "$MT317",
+            "group": "SPECS_RANGE",
+            "price": 22990,
+            "range_source": "EPA",
+            "unit_long": "miles",
+            "unit_short": "mi",
+            "value": "315"
+          },
+          {
+            "code": "$APBS",
+            "description": "Autopilot",
+            "group": "AUTOPILOT",
+            "long_name": "Autopilot",
+            "name": "Basic Autopilot"
+          },
+          {
+            "code": "$BC3R",
+            "description": "Performance Brakes",
+            "group": "BRAKES",
+            "long_name": "Performance Brakes",
+            "name": "Performance Brakes"
+          },
+          {
+            "code": "$DV4W",
+            "description": "Dual Motor All-Wheel Drive",
+            "group": "DRIVE_MODE",
+            "long_name": "Dual Motor All-Wheel Drive",
+            "name": "Dual Motor All-Wheel Drive"
+          },
+          {
+            "code": "$IPW1",
+            "description": "Black and White Premium Interior",
+            "group": "INTERIOR",
+            "long_name": "Black and White Premium Interior",
+            "name": "Black and White Premium Interior",
+            "price": 1000
+          },
+          {
+            "code": "$PMNG",
+            "description": "Midnight Silver Metallic",
+            "group": "PAINT",
+            "long_name": "Midnight Silver Metallic Paint",
+            "name": "Midnight Silver Metallic",
+            "price": 1000
+          },
+          {
+            "code": "$PRM31",
+            "description": "<p>Upgrade your interior with additional features and premium materials.</p><ul><li><span>Premium heated seating and cabin materials throughout, including open pore wood décor, glass roof and four USB ports</span></li><li><span>12-way power adjustable front seats, steering column and side mirrors, with custom driver profiles</span></li><li><span>Premium audio system with more power, tweeters, surround speakers and subwoofer</span></li></ul>",
+            "group": "PREMIUM_PACKAGE",
+            "long_name": "Premium Interior",
+            "name": "Premium Interior"
+          },
+          {
+            "code": "$SC04",
+            "description": "Supercharger Network Access + Pay-as-you-go",
+            "group": "SUPER_CHARGER",
+            "long_name": "Supercharger Network Access + Pay-as-you-go",
+            "name": "Supercharger Network Access + Pay-as-you-go"
+          },
+          {
+            "code": "$MDL3",
+            "description": "Deliveries are beginning in the US based on date of order and options selected.",
+            "group": "MODEL'",
+            "long_name": "Model 3",
+            "name": "Model 3",
+            "price": 35000
+          },
+          {
+            "code": "$W33D",
+            "description": "20’’ Uberturbine Wheels",
+            "group": "WHEELS",
+            "long_name": "20’’ Überturbine Wheels",
+            "name": "20’’ Überturbine Wheels"
+          },
+          {
+            "code": "$SLR1",
+            "description": "Carbon Fiber Spoiler",
+            "group": "SPOILER",
+            "long_name": "Carbon Fiber Spoiler",
+            "name": "Carbon Fiber Spoiler"
+          },
+          {
+            "code": "$MT317",
+            "description": "Model 3 Performance",
+            "group": "TRIM",
+            "long_name": "Long Range All-Wheel Drive Performance",
+            "name": "Long Range All-Wheel Drive Performance",
+            "price": 22990
+          },
+          {
+            "code": "$PL31",
+            "description": "Performance Pedals",
+            "group": "PEDALS",
+            "long_name": "Performance Pedals",
+            "name": "Performance Pedals"
+          },
+          {
+            "code": "$SPT31",
+            "description": "Performance Upgrade",
+            "group": "SPORT_PACKAGE",
+            "long_name": "Performance Upgrade",
+            "name": "Performance Upgrade"
+          },
+          {
+            "code": "$CPF0",
+            "description": "Standard Connectivity",
+            "group": "CONNECTIVITY",
+            "long_name": "Standard Connectivity",
+            "name": "Standard Connectivity"
+          },
+          {
+            "code": "$RSF1",
+            "description": "Rear Heated Seats",
+            "group": "HEATED_SEAT",
+            "long_name": "Rear Heated Seats",
+            "name": "Rear Heated Seats"
+          }
+        ],
+        "OptionCodeList": "$APBS,$BC3R,$DV4W,$IPW1,$PMNG,$PRM31,$SC04,$MDL3,$W33D,$SLR1,$MT317,$PL31,$SPT31,$CPF0,$RSF1",
+        "OptionCodeListDisplayOnly": null,
+        "OptionCodePricing": [
+          {
+            "code": "$APBS",
+            "group": "AUTOPILOT_PACKAGE",
+            "price": 0
+          },
+          {
+            "code": "$BC3R",
+            "group": "BRAKES",
+            "price": 0
+          },
+          {
+            "code": "$DV4W",
+            "group": "DRIVE_MODE",
+            "price": 0
+          },
+          {
+            "code": "$IPW1",
+            "group": "INTERIOR",
+            "price": 1000
+          },
+          {
+            "code": "$PMNG",
+            "group": "PAINT",
+            "price": 1000
+          },
+          {
+            "code": "$PRM31",
+            "group": "PREMIUM_PACKAGE",
+            "price": 0
+          },
+          {
+            "code": "$SC04",
+            "group": "SUPER_CHARGER",
+            "price": 0
+          },
+          {
+            "code": "$MDL3",
+            "group": "MODEL",
+            "price": 35000
+          },
+          {
+            "code": "$W33D",
+            "group": "WHEELS",
+            "price": 0
+          },
+          {
+            "code": "$SLR1",
+            "group": "SPOILER",
+            "price": 0
+          },
+          {
+            "code": "$MT317",
+            "group": "TRIM",
+            "price": 22990
+          },
+          {
+            "code": "$PL31",
+            "group": "PEDALS",
+            "price": 0
+          },
+          {
+            "code": "$SPT31",
+            "group": "SPORT_PACKAGE",
+            "price": 0
+          },
+          {
+            "code": "$CPF0",
+            "group": "CONNECTIVITY",
+            "price": 0
+          },
+          {
+            "code": "$RSF1",
+            "group": "HEATED_SEAT",
+            "price": 0
+          }
+        ],
+        "OrderFee": {
+          "type": "order_fee",
+          "value": 250
+        },
+        "OriginalDeliveryDate": null,
+        "OriginalInCustomerGarageDate": null,
+        "PAINT": [
+          "GRAY"
+        ],
+        "PlannedGADailyDate": "2021-09-21T00:00:00",
+        "PreownedWarrantyEligibility": null,
+        "Price": 59990,
+        "PurchasePrice": 59990,
+        "ROOF": null,
+        "RefurbishmentCompletionETA": null,
+        "SalesMetro": "Seattle",
+        "SalesNotes": null,
+        "StateProvince": "WA",
+        "StateProvinceLongName": "WA",
+        "TRIM": [
+          "LRAWDP"
+        ],
+        "TaxScheme": null,
+        "ThirdPartyHistoryUrl": null,
+        "TilburgFactoryGatedDate": null,
+        "TilburgGAInDate": null,
+        "TitleReceivedOwnershipTransferDate": null,
+        "TitleStatus": "NEW",
+        "TitleSubtype": [
+          "BRANDNEW"
+        ],
+        "TotalPrice": 59990,
+        "TransportFees": {
+          "exemptVRL": [
+            1135,
+            1138,
+            12645,
+            7831,
+            8162,
+            13873,
+            13874
+          ],
+          "fees": [
+            {
+              "amount": 0,
+              "condition": "new",
+              "query": {
+                "max": 100,
+                "min": 0
+              },
+              "type": "transportation",
+              "units": "miles"
+            },
+            {
+              "amount": 500,
+              "condition": "new",
+              "query": {
+                "max": 600,
+                "min": 100.000001
+              },
+              "type": "transportation",
+              "units": "miles"
+            },
+            {
+              "amount": 1000,
+              "condition": "new",
+              "query": {
+                "max": 1300,
+                "min": 600.000001
+              },
+              "type": "transportation",
+              "units": "miles"
+            },
+            {
+              "amount": 2000,
+              "condition": "new",
+              "query": {
+                "max": 2500,
+                "min": 1300.000001
+              },
+              "type": "transportation",
+              "units": "miles"
+            },
+            {
+              "amount": 2500,
+              "condition": "new",
+              "query": {
+                "max": 1000000,
+                "min": 2500.000001
+              },
+              "type": "transportation",
+              "units": "miles"
+            }
+          ],
+          "metro_fees": [
+            {
+              "amount": 0,
+              "destination_metro": "Orange County",
+              "source_metro": "Bay Area"
+            },
+            {
+              "amount": 0,
+              "destination_metro": "Los Angeles",
+              "source_metro": "Bay Area"
+            },
+            {
+              "amount": 0,
+              "destination_metro": "San Diego",
+              "source_metro": "Bay Area"
+            },
+            {
+              "amount": 0,
+              "destination_metro": "Bay Area",
+              "source_metro": "Bay Area"
+            }
+          ]
+        },
+        "TrimCode": "$MT317",
+        "TrimName": "Long Range All-Wheel Drive Performance",
+        "Trt": 8995,
+        "TrtName": "Seattle-Renton",
+        "UsedVehiclePhotosCompletedDate": null,
+        "VIN": "5YJ3254_a96bcb7515ae6d4ee92a35cbda76c0c4",
+        "Variant": null,
+        "VehicleHistory": null,
+        "VehicleRegion": "WA",
+        "VrlName": "Seattle-Renton",
+        "WHEELS": null,
+        "WarrantyBatteryExpDate": "0001-01-01T00:00:00Z",
+        "WarrantyBatteryIsExpired": false,
+        "WarrantyBatteryMile": 120000,
+        "WarrantyBatteryYear": 8,
+        "WarrantyData": {
+          "UsedVehicleLimitedWarrantyMile": 0,
+          "UsedVehicleLimitedWarrantyYear": 0,
+          "WarrantyBatteryExpDate": "0001-01-01T00:00:00Z",
+          "WarrantyBatteryIsExpired": false,
+          "WarrantyBatteryMile": 120000,
+          "WarrantyBatteryYear": 8,
+          "WarrantyDriveUnitExpDate": "0001-01-01T00:00:00Z",
+          "WarrantyDriveUnitMile": 120000,
+          "WarrantyDriveUnitYear": 8,
+          "WarrantyMile": 50000,
+          "WarrantyVehicleExpDate": "0001-01-01T00:00:00Z",
+          "WarrantyVehicleIsExpired": false,
+          "WarrantyYear": 4
+        },
+        "WarrantyDriveUnitExpDate": "0001-01-01T00:00:00Z",
+        "WarrantyDriveUnitMile": 120000,
+        "WarrantyDriveUnitYear": 8,
+        "WarrantyMile": 50000,
+        "WarrantyVehicleExpDate": "0001-01-01T00:00:00Z",
+        "WarrantyVehicleIsExpired": false,
+        "WarrantyYear": 4,
+        "Year": 2021,
+        "UsedVehicleLimitedWarrantyMile": 0,
+        "UsedVehicleLimitedWarrantyYear": 0,
+        "DeliveryDateDisplay": true,
+        "Hash": "254_a96bcb7515ae6d4ee92a35cbda76c0c4",
+        "Odometer": 4,
+        "OptionCodeSpecs": {
+          "C_SPECS": {
+            "code": "C_SPECS",
+            "name": "Specs",
+            "options": [
+              {
+                "code": "SPECS_ACCELERATION",
+                "name": "3.1 sec",
+                "long_name": "3.1 seconds",
+                "description": "0-60 mph"
+              },
+              {
+                "code": "SPECS_TOP_SPEED",
+                "name": "162 mph",
+                "long_name": "162 miles per hour",
+                "description": "Top Speed"
+              },
+              {
+                "code": "SPECS_RANGE",
+                "name": "315 mi",
+                "long_name": "315 miles",
+                "description": "range (EPA)"
+              }
+            ]
+          },
+          "C_DESIGN": {
+            "code": "C_DESIGN",
+            "name": "Design",
+            "options": []
+          },
+          "C_CALLOUTS": {
+            "code": "C_CALLOUTS",
+            "name": "Callout Features",
+            "options": [
+              {
+                "code": "$APBS",
+                "name": "Autopilot",
+                "long_name": "",
+                "description": "Autopilot",
+                "group": "AUTOPILOT"
+              },
+              {
+                "code": "PCT1Y",
+                "name": "1-Year Premium Connectivity Trial",
+                "description": "1-Year Premium Connectivity Trial",
+                "group": "CONNECTIVITY",
+                "list": [
+                  "satelliteMaps",
+                  "musicStreaming",
+                  "videoStreaming",
+                  "caraoke",
+                  "internetBrowser"
+                ],
+                "period": "1-Year"
+              }
+            ]
+          },
+          "C_OPTS": {
+            "code": "C_OPTS",
+            "name": "Options",
+            "options": [
+              {
+                "code": "$PMNG",
+                "name": "Midnight Silver Metallic Paint",
+                "long_name": "",
+                "description": "Midnight Silver Metallic"
+              },
+              {
+                "code": "$W33D",
+                "name": "20’’ Überturbine Wheels",
+                "long_name": "",
+                "description": "20’’ Uberturbine Wheels"
+              },
+              {
+                "code": "$IPW1",
+                "name": "Black and White Premium Interior",
+                "long_name": "",
+                "description": "Black and White Premium Interior"
+              },
+              {
+                "code": "$APBS",
+                "name": "Autopilot",
+                "long_name": "",
+                "description": "Autopilot"
+              },
+              {
+                "code": "$SPT31",
+                "name": "Performance Upgrade",
+                "long_name": "",
+                "description": "Performance Upgrade"
+              },
+              {
+                "code": "$SLR1",
+                "name": "Carbon Fiber Spoiler",
+                "long_name": "",
+                "description": "Carbon Fiber Spoiler"
+              },
+              {
+                "code": "$PL31",
+                "name": "Performance Pedals",
+                "long_name": "",
+                "description": "Performance Pedals"
+              },
+              {
+                "code": "$BC3R",
+                "name": "Performance Brakes",
+                "long_name": "",
+                "description": "Performance Brakes"
+              },
+              {
+                "code": "$RSF1",
+                "name": "Front and Rear Heated Seats",
+                "long_name": "",
+                "description": "Rear Heated Seats"
+              }
+            ]
+          }
+        },
+        "CompositorViewsCustom": {
+          "isProductWithCustomViews": false,
+          "externalZoom": {
+            "order": 1.4,
+            "details": 1,
+            "search": 1.3
+          }
+        },
+        "IsRangeStandard": true,
+        "MetroName": "Seattle",
+        "geoPoints": [
+          [
+            "47.472369,-122.211189",
+            8995
+          ]
+        ],
+        "HasMarketingOptions": true,
+        "IsFactoryGated": true
+      }
+    ],
+    "total_matches_found": "1"
+  }
