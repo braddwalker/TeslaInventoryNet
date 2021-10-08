@@ -2,9 +2,9 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using RestSharp;
 using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Runtime.InteropServices;
+using System.Linq;
 
 namespace TeslaInventoryNet
 {
@@ -15,6 +15,9 @@ namespace TeslaInventoryNet
     {
         // The public Tesla inventory API
         private static readonly string TESLA_API = "https://www.tesla.com/inventory/api/v1/inventory-results";
+        
+        // The URL to build image compositor urls from
+        private static readonly string COMPOSITOR_URL = "https://static-assets.tesla.com/v1/compositor/";
 
         private readonly ILogger<TeslaInventory> logger;
         private IRestClient client = null;
@@ -100,8 +103,36 @@ namespace TeslaInventoryNet
                 }
 
                 // Deserialize the actual results and return the relevant portion
-                return JsonConvert.DeserializeObject<SearchResult>(response.Content);
+                var results = JsonConvert.DeserializeObject<SearchResult>(response.Content);
+
+                // generate the image URLs
+                foreach (var vehicle in results.Vehicles)
+                {
+                    vehicle.CompositorUrls = new CompositorUrls();
+
+                    if (!string.IsNullOrWhiteSpace(vehicle.CompositorViews.FrontView))
+                    {
+                        vehicle.CompositorUrls.FrontView = BuildImageUrl(vehicle.CompositorViews.FrontView, vehicle);
+                    }
+
+                    if (!string.IsNullOrWhiteSpace(vehicle.CompositorViews.InteriorView))
+                    {
+                        vehicle.CompositorUrls.InteriorView = BuildImageUrl(vehicle.CompositorViews.InteriorView, vehicle);
+                    }
+
+                    if (!string.IsNullOrWhiteSpace(vehicle.CompositorViews.SideView))
+                    {
+                        vehicle.CompositorUrls.SideView = BuildImageUrl(vehicle.CompositorViews.SideView, vehicle);
+                    }
+                }
+
+                return results;
             }
+        }
+
+        private string BuildImageUrl(string viewName, Vehicle vehicle)
+        {
+            return $"{COMPOSITOR_URL}?model={vehicle.Model}&view={viewName}&size=1441&bkba_opt=2&options={string.Join(',', vehicle.OptionCodeData.Select(x => x.Code))}";
         }
     }
 }

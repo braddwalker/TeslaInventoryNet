@@ -24,18 +24,41 @@
                     foreach (var result in results.Vehicles)
                     {
                         logger.LogInformation($"https://www.tesla.com/{result.Model}/order/{result.Vin}"
-                                    + $"\n{result.Year} {result.Model}"
-                                    + $"\n{result.TrimName}" + (result.IsDemo ? " Demo" : "")
-                                    + $"\n{result.OptionCodeData.Where(x => x.Group == "PAINT").Select(x => x.Name).FirstOrDefault()}"
-                                    + (result.Autopilot.Contains("AUTOPILOT_FULL_SELF_DRIVING") ? "\nFull Self-Driving Capability" : "")
-                                    + $"\nFactory: {result.FactoryCode}"
-                                    + $"\n{result.City}, {result.StateProvince}"
-                                    + $"\nhttps://static-assets.tesla.com/v1/compositor/?model={result.Model}&view={result.CompositorViews.FrontView}&size=1441&bkba_opt=2&options={string.Join(',', result.OptionCodeData.Select(x => x.Code))}");
+                            + $"\n{result.Year} {result.Model}"
+                            + $"\n{result.TrimName}" + (result.IsDemo ? " Demo" : "")
+                            + $"\n{result.OptionCodeData.Where(x => x.Group == "PAINT").Select(x => x.Name).FirstOrDefault()}"
+                            + (result.Autopilot.Contains("AUTOPILOT_FULL_SELF_DRIVING") ? "\nFull Self-Driving Capability" : "")
+                            + $"\nFactory: {result.FactoryCode}"
+                            + $"\n{result.City}, {result.StateProvince}"
+                            + $"\n{result.CompositorUrls.FrontView}");
                     }
                 });
         }
     }
 ```
+
+## API
+### TeslaInventory(logger, [Optional]restClientImpl])
+#### logger
+Type: `ILogger<TeslaInventory>`
+The logger to use to log any debug/info messages
+
+#### restClientImpl
+Type: `IRestClient`
+An optional `IRestClient` implementation to use for invoking API calls
+
+### Search(location, searchCriteria)
+#### location
+Type: `Location`
+An instance of a `Location` object that represents the country/region to be searched.
+
+#### searchCriteria
+Type: `SearchCriteria`
+The search criteria to perform the search against.
+- `Model`: m3 | ms | my | mx
+- `Condition`: new | used
+- `Count`: The number of results to return. Default is 20
+- `Offset`: For paging, the index into the total results to begin from
 
 ## License
 

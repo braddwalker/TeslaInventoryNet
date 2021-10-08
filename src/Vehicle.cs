@@ -15,6 +15,22 @@ namespace TeslaInventoryNet
         public string InteriorView { get; set; }
     }
 
+    /// <summary>
+    /// These are not part of the underlying data model, but rather they get computed
+    /// once search results get returned from the API.
+    /// </summary>
+    public class CompositorUrls
+    {
+        [JsonProperty("frontView")]
+        public string FrontView { get; set; }
+        
+        [JsonProperty("sideView")]
+        public string SideView { get; set; }
+        
+        [JsonProperty("interiorView")]
+        public string InteriorView { get; set; }
+    }
+
     public class FlexibleOptionsData
     {
         [JsonProperty("code")]
@@ -371,6 +387,7 @@ namespace TeslaInventoryNet
         public string CPOWarrantyType { get; set; }
         public string City { get; set; }
         public CompositorViews CompositorViews { get; set; }
+        public CompositorUrls CompositorUrls { get; set; }
         public string CountryCode { get; set; }
         public string[] CountryCodes { get; set; }
         public string CountryOfOrigin { get; set; }
