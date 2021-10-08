@@ -45,23 +45,22 @@ The logger to use to log any debug/info messages
 
 #### restClientImpl
 Type: `IRestClient`
-An optional `IRestClient` implementation to use for invoking API calls
+<br/>An optional `IRestClient` implementation to use for invoking API calls
 
 ### Search(location, searchCriteria)
 #### location
 Type: `Location`
-An instance of a `Location` object that represents the country/region to be searched.
+<br/>An instance of a `Location` object that represents the country/region to be searched.
 
 #### searchCriteria
 Type: `SearchCriteria`
-The search criteria to perform the search against.
+<br/>The search criteria to perform the search against.
 - `Model`: m3 | ms | my | mx
 - `Condition`: new | used
 - `Count`: The number of results to return. Default is 20
 - `Offset`: For paging, the index into the total results to begin from
 
 ## License
-
 **TeslaInventoryNet** © Brad Walker, released under the [MIT](https://github.com/braddwalker/TeslaInventoryNet/blob/master/LICENSE.md) License.<br>
 Authored and maintained by Brad Walker with help from [contributors](https://github.com/braddwalker/TeslaInventoryNet/contributors).
 
