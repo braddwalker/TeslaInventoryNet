@@ -41,7 +41,7 @@
 ### TeslaInventory(logger, [Optional]restClientImpl])
 #### logger
 Type: `ILogger<TeslaInventory>`
-The logger to use to log any debug/info messages
+<br/>The logger to use to log any debug/info messages
 
 #### restClientImpl
 Type: `IRestClient`
