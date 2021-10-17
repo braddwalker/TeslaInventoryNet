@@ -100,7 +100,7 @@ namespace TeslaInventoryNet
         public int BalloonPayment { get; set; }
 
         [JsonProperty("balloonPaymentPercent")]
-        public int BalloonPaymentPercent { get; set; }
+        public double BalloonPaymentPercent { get; set; }
 
         [JsonProperty("costOfCredit")]
         public int? CostOfCredit { get; set; }
@@ -402,7 +402,9 @@ namespace TeslaInventoryNet
         public bool Decommissioned { get; set; }
         public int DestinationHandlingFee { get; set; }
         public int Discount { get; set; }
-        public int DiscountPercentages { get; set; }
+
+        [JsonProperty("discountPercentages")]
+        public double DiscountPercentages { get; set; }
         public bool DisplayWarranty { get; set; }
         public DateTime? DocumentSyncDate { get; set; }
         public DateTime? EtaToCurrent { get; set; }
