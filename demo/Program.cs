@@ -15,9 +15,9 @@ namespace TeslaInventoryNet.Demo
 
             var logger = loggerFactory.CreateLogger<Program>();
             var tesla = new TeslaInventory(loggerFactory.CreateLogger<TeslaInventory>());
-            var location = Location.US;
+            var location = Location.ES;
 
-            tesla.Search(location, new SearchCriteria() { Model = "ms", Condition = "used", Count = 100},
+            tesla.Search(location, new SearchCriteria() { Model = "m3", Condition = "used", Count = 100},
                 (results) => {
                     logger.LogInformation($"Found {results.TotalMatchesFound} vehicles total, {results.Vehicles.Length} vehicles returned");
                     

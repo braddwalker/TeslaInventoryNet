@@ -121,6 +121,7 @@ namespace TeslaInventoryNet
                 // generate the image URLs
                 foreach (var vehicle in results.Vehicles)
                 {
+                    vehicle.DetailsUrl = BuildDetailsUrl(vehicle.Vin, vehicle.Model, criteria.Condition, location);
                     vehicle.CompositorUrls = new CompositorUrls();
 
                     if (!string.IsNullOrWhiteSpace(vehicle.CompositorViews.FrontView))
@@ -137,19 +138,30 @@ namespace TeslaInventoryNet
                     {
                         vehicle.CompositorUrls.SideView = BuildImageUrl(vehicle.CompositorViews.SideView, vehicle);
                     }
-
-                    // build the details URL
-                    if (location == Location.US)
-                    {
-                        vehicle.DetailsUrl = $"https://www.tesla.com/{vehicle.Model}/order/{vehicle.Vin}";
-                    }
-                    else 
-                    {
-                        vehicle.DetailsUrl = $"https://www.tesla.com/{location.Language}_{location.Market}/{criteria.Condition}/{vehicle.Vin}";
-                    }
                 }
 
                 return results;
+            }
+        }
+
+        /// <summary>
+        /// Builds the appropriate details view URL for a vehicle. Different locations use different URLs.
+        /// </summary>
+        /// <param name="vin">The vehicle vin</param>
+        /// <param name="model">The vehicle model</param>
+        /// <param name="condition">The vehicle condition</param>
+        /// <param name="location">The location this vehicle exists in</param>
+        /// <returns></returns>
+        public string BuildDetailsUrl(string vin, string model, string condition, Location location)
+        {
+            // build the details URL
+            if (location == Location.US)
+            {
+                return $"https://www.tesla.com/{model}/order/{vin}";
+            }
+            else 
+            {
+                return $"https://www.tesla.com/{location.Language}_{location.Market}/{condition}/{vin}";
             }
         }
 
