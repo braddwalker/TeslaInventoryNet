@@ -1,4 +1,6 @@
 using Newtonsoft.Json;
+using System.Reflection;
+using System;
 
 namespace TeslaInventoryNet
 {
@@ -17,5 +19,19 @@ namespace TeslaInventoryNet
         public static Location US = new Location() { Market = "US", Language = "en" };
         public static Location UK = new Location() { Market = "GB", Language = "en" };
         public static Location ES = new Location() { Market = "ES", Language = "es" };
+
+        public static Location Parse(string market)
+        {
+            foreach (var field in typeof(Location).GetFields(BindingFlags.Public | BindingFlags.Static))
+            {
+                var location = (Location)field.GetValue(null);
+                if (location.Market.Equals(market, System.StringComparison.CurrentCultureIgnoreCase))
+                {
+                    return location;
+                }
+            }
+
+            throw new ArgumentException($"Unknown location {market}");
+        }
     }
 }
