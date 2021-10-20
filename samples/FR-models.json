@@ -1,0 +1,1728 @@
+{
+  "InTransit": false,
+  "ADL_OPTS": [
+    "AUDIO",
+    "HEATED_SEAT",
+    "FILTER",
+    "AIR_SUS"
+  ],
+  "AUTOPILOT": [
+    "ENHANCED_AUTOPILOT",
+    "AUTOPILOT_ORIGINAL"
+  ],
+  "ActualGAInDate": null,
+  "AddToInventoryReason": "BBG",
+  "BATTERY": [
+    "HUNDRED"
+  ],
+  "CABIN_CONFIG": null,
+  "CPORefurbishmentStatus": "IN PROGRESS",
+  "CPOWarrantyType": null,
+  "City": "Chambourcy",
+  "CompositorViews": {
+    "frontView": "STUD_3QTR",
+    "sideView": "STUD_SIDE",
+    "interiorView": "STUD_SEAT_ALTA"
+  },
+  "CompositorUrls": {
+    "frontView": "https://static-assets.tesla.com/v1/compositor/?model=ms&view=STUD_3QTR&size=1441&bkba_opt=2&options=$MT10A,$MT10A,$MT10A,$BP02,$ADPX2,$AU01,$APF1,$APH2,$APPB,$X028,$BTX6,$BS00,$BCMB,$CH04,$CF00,$CW02,$COFR,$X039,$IDCF,$X027,$DRLH,$DU00,$AF02,$FMP6,$FG02,$DCF0,$FR04,$X007,$X011,$INBPW,$PI01,$IX00,$X001,$LP01,$MI01,$X037,$MDLS,$DV4W,$X025,$X003,$PPSB,$PS01,$PK00,$X031,$PX00,$PF00,$X043,$TM00,$BR00,$REEU,$RFFG,$X014,$ME02,$QTPW,$SR01,$SP01,$X021,$SC04,$SU01,$TR00,$DSH5,$MT10A,$UTAB,$WTAS,$YFCC,$CPF0",
+    "sideView": "https://static-assets.tesla.com/v1/compositor/?model=ms&view=STUD_SIDE&size=1441&bkba_opt=2&options=$MT10A,$MT10A,$MT10A,$BP02,$ADPX2,$AU01,$APF1,$APH2,$APPB,$X028,$BTX6,$BS00,$BCMB,$CH04,$CF00,$CW02,$COFR,$X039,$IDCF,$X027,$DRLH,$DU00,$AF02,$FMP6,$FG02,$DCF0,$FR04,$X007,$X011,$INBPW,$PI01,$IX00,$X001,$LP01,$MI01,$X037,$MDLS,$DV4W,$X025,$X003,$PPSB,$PS01,$PK00,$X031,$PX00,$PF00,$X043,$TM00,$BR00,$REEU,$RFFG,$X014,$ME02,$QTPW,$SR01,$SP01,$X021,$SC04,$SU01,$TR00,$DSH5,$MT10A,$UTAB,$WTAS,$YFCC,$CPF0",
+    "interiorView": "https://static-assets.tesla.com/v1/compositor/?model=ms&view=STUD_SEAT_ALTA&size=1441&bkba_opt=2&options=$MT10A,$MT10A,$MT10A,$BP02,$ADPX2,$AU01,$APF1,$APH2,$APPB,$X028,$BTX6,$BS00,$BCMB,$CH04,$CF00,$CW02,$COFR,$X039,$IDCF,$X027,$DRLH,$DU00,$AF02,$FMP6,$FG02,$DCF0,$FR04,$X007,$X011,$INBPW,$PI01,$IX00,$X001,$LP01,$MI01,$X037,$MDLS,$DV4W,$X025,$X003,$PPSB,$PS01,$PK00,$X031,$PX00,$PF00,$X043,$TM00,$BR00,$REEU,$RFFG,$X014,$ME02,$QTPW,$SR01,$SP01,$X021,$SC04,$SU01,$TR00,$DSH5,$MT10A,$UTAB,$WTAS,$YFCC,$CPF0"
+  },
+  "CountryCode": "FR",
+  "CountryCodes": [
+    "FR"
+  ],
+  "CountryOfOrigin": "FR",
+  "CurrencyCode": "EUR",
+  "CurrencyCodes": "EUR",
+  "DECOR": [
+    "CARBON"
+  ],
+  "DRIVE": [
+    "AWD",
+    "NON_PERF"
+  ],
+  "Decommissioned": false,
+  "DestinationHandlingFee": 0,
+  "Discount": 0,
+  "discountPercentages": 0,
+  "DisplayWarranty": false,
+  "DocumentSyncDate": "2021-10-20T12:31:11.5749864Z",
+  "EtaToCurrent": null,
+  "FactoryCode": "GF00",
+  "FixedAssets": false,
+  "FlexibleOptionsData": [
+    {
+      "code": "$APF2",
+      "description": "<ul class=\"single single--full\"><li>Navigation avec Autopilot : conduite automatisée de la voie d'insertion jusqu'à la sortie d'autoroute, y compris sur les échangeurs et pour dépasser des véhicules plus lents.</li><li>Parking Auto : stationnement en créneau et en bataille.</li><li>Sortie Auto : depuis son stationnement, votre véhicule viendra à votre rencontre, où que vous soyez sur le parking. Vraiment.</li></ul><p><strong>À venir cette année :</strong></p><ul class=\"single single--full\"><li>Reconnaissance et réaction aux feux de signalisation et aux panneaux stop.</li><li>Conduite automatisée en ville.</li></ul><p>Les fonctionnalités actuelles exigent une surveillance active de la part du conducteur et ne rendent pas le véhicule autonome. L'activation et l'utilisation future de ces fonctionnalités sans surveillance dépendent d'une fiabilité prouvée par des milliards de kilomètres de test pour être significativement supérieure à celle des conducteurs humains, ainsi que de l'approbation réglementaire, dont l'obtention peut être plus longue dans certains pays. Au fur et à mesure de l'évolution de ces fonctionnalités de conduite autonome, votre véhicule sera en permanence mis à niveau par le biais de mises à jour logicielles à distance.</p>",
+      "group": "AUTOPILOT_FIRMWARE",
+      "long_name": "Capacité de conduite entièrement autonome",
+      "name": "Capacité de conduite entièrement autonome",
+      "price": 7500
+    }
+  ],
+  "HEADLINER": [
+    "DARK_HEADLINER"
+  ],
+  "HOVStatus": null,
+  "HasDamagePhotos": false,
+  "HasOptionCodeData": true,
+  "INTERIOR": [
+    "WHITE"
+  ],
+  "InspectionDocumentGuid": null,
+  "InventoryPrice": 67900,
+  "IsAvailableForMatch": true,
+  "IsDemo": false,
+  "IsLegacy": true,
+  "IsSoftMatched": false,
+  "IsTegra": true,
+  "Language": "fr",
+  "Languages": [
+    "fr"
+  ],
+  "LastTransformationSuccess": true,
+  "LeaseAvailabilityDate": null,
+  "LexiconDefaultOptions": [
+    {
+      "code": "$SC04",
+      "description": "Paiement de la Supercharge à l'utilisation",
+      "group": "SUPER_CHARGER",
+      "long_name": "Paiement de la Supercharge à l'utilisation",
+      "name": "Paiement de la Supercharge à l'utilisation"
+    },
+    {
+      "code": "$CPF0",
+      "description": "Connectivité standard",
+      "group": "CONNECTIVITY",
+      "long_name": "Connectivité standard",
+      "name": "Connectivité standard"
+    }
+  ],
+  "ListingReasons": "USED_PRELISTING_NA",
+  "ListingType": "public",
+  "ListingTypes": "public",
+  "LoanDetails": null,
+  "ManufacturingOptionCodeList": "BP02,ADPX2,AU01,APF1,APH2,APPB,X028,BTX6,BS00,BCMB,CH04,CF00,CW02,COFR,X039,IDCF,X027,DRLH,DU00,AF02,FMP6,FG02,DCF0,FR04,X007,X011,INBPW,PI01,IX00,X001,LP01,MI01,X037,MDLS,DV4W,X025,X003,PPSB,PS01,PK00,X031,PX00,PF00,X043,TM00,BR00,REEU,RFFG,X014,ME02,QTPW,SR01,SP01,X021,SC04,SU01,TR00,DSH5,MT10A,UTAB,WTAS,YFCC,CPF0",
+  "MarketingInUseDate": null,
+  "MatchType": "MANUAL",
+  "Model": "ms",
+  "MonroneyPrice": 0,
+  "NeedsReview": false,
+  "OdometerType": "Km",
+  "OptionCodeData": [
+    {
+      "acceleration_unit_long": "kilomètres par heure",
+      "acceleration_unit_short": "km/h",
+      "acceleration_value": "0-100",
+      "code": "$MT10A",
+      "group": "SPECS_ACCELERATION",
+      "price": 0,
+      "unit_long": "secondes",
+      "unit_short": "sec",
+      "value": "4.3",
+      "range_source": null,
+      "description": null,
+      "long_name": null,
+      "name": null
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$MT10A",
+      "group": "SPECS_TOP_SPEED",
+      "price": 0,
+      "unit_long": "kilomètres par heure",
+      "unit_short": "km/h",
+      "value": "249",
+      "range_source": null,
+      "description": null,
+      "long_name": null,
+      "name": null
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$MT10A",
+      "group": "SPECS_RANGE",
+      "price": 0,
+      "unit_long": "kilomètres",
+      "unit_short": "km",
+      "value": "632",
+      "range_source": "NEDC",
+      "description": null,
+      "long_name": null,
+      "name": null
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$BP02",
+      "group": "ACCELERATION",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Non-Performance Uncorked Acceleration",
+      "long_name": "Non-Performance Uncorked Acceleration",
+      "name": "Non-Performance Uncorked Acceleration"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$ADPX2",
+      "group": "ADAPTER",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Connecteur Type 2 pour recharges publiques",
+      "long_name": "Connecteur Type 2 pour recharges publiques",
+      "name": "Connecteur Type 2 pour recharges publiques"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$AU01",
+      "group": "AUDIO",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "<p>Enveloppez votre habitacle d'une acoustique à la fois puissante et cristalline. Cette extension comprend : un puissant amplificateur, un caisson de basse et 11 haut-parleurs méticuleusement positionnés pour restituer et délivrer un son parfait pour vous et vos passagers. Un système sur-mesure, dédié aux audiophiles, qui tire tout son avantage de l'habitacle spacieux et du moteur silencieux du Model S. Résultat unanime : une expérience unique dans le monde de l'automobile, dépassant largement les meilleurs systèmes et les plus onéreux en écoute à l'aveugle. Ce pack comprend :</p> <ul> <li>11 haut-parleurs avec aimants en néodyme dont un caisson de basse de 8 \"</li></ul>",
+      "long_name": "Son très haute fidélité",
+      "name": "Son très haute fidélité"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$APF1",
+      "group": "AUTOPILOT_FIRMWARE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Autopilot Firmware 2.0 Enhanced",
+      "long_name": "Pilotage automatique amélioré",
+      "name": "Pilotage automatique amélioré"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$APH2",
+      "group": "AUTOPILOT_HARDWARE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "APH2",
+      "long_name": "APH2",
+      "name": "APH2"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$APPB",
+      "group": "AUTOPILOT_PACKAGE",
+      "price": 3800,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "<p>\r\nLe pilotage automatique amélioré ajoute de nouvelles fonctionnalités à l'expérience de conduite Tesla. Parmi ces améliorations, le passage du nombre de caméras de une à quatre pour une plus grande exactitude et une meilleure capacité à capter tous véhicules s'approchant dans les voies adjacentes. De plus, 12 capteurs ultrasoniques offrent une couverture à 360° autour de votre Tesla avec une définition deux fois supérieure à la génération précédente. </p> <p> Toutes les informations générées par ces capteurs dernière génération sont traitées par un ordinateur 40 fois plus puissant qu'auparavant. Votre Tesla pourra adapter sa vitesse au trafic, rester dans sa voie, changer de voie avec fluidité sans intervention du conducteur, bifurquer vers une autre autoroute, sortir de celle-ci une fois votre destination proche, se garer toute seule quand vous êtes à proximité d'un parking ou manœuvrer pour sortir et entrer de votre garage. Ceci étant dit, le pilotage automatique amélioré doit être considéré comme un assistant à la conduite et il est de la responsabilité du conducteur de rester maître de son véhicule en toutes circonstances.\r\n</p>\r\n<p>Le Pilotage automatique amélioré Tesla a commencé à être déployé. D'autres fonctionnalités feront bientôt leur apparition sous réserve d'approbations réglementaires.</p>",
+      "long_name": "Pilotage automatique amélioré",
+      "name": "Pilotage automatique amélioré"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$X028",
+      "group": "BADGE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Badge de la batterie",
+      "long_name": "Badge de la batterie",
+      "name": "Badge de la batterie"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$BTX6",
+      "group": "BATTERY",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "<p>632 km <span>Autonomie NEDC</span></p>",
+      "long_name": "Model S Grande Autonomie",
+      "name": "Grande Autonomie"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$BS00",
+      "group": "BLIND_SPOT",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "General Production Flag",
+      "long_name": "General Production Flag",
+      "name": "General Production Flag"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$BCMB",
+      "group": "CALIPER",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Black Brake Calipers",
+      "long_name": "Étriers de frein noirs",
+      "name": "Étriers de frein noirs"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$CH04",
+      "group": "CHARGER",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "The High Amperage Charger equips Model S with a 72 amp onboard charger, increasing recharge speeds up to 52 miles per hour when used with a Wall Connector on an appropriate circuit. Recommended for high mileage drivers and those who regularly travel off the beaten path.",
+      "long_name": "High Amperage Charger",
+      "name": "High Amperage Charger"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$CF00",
+      "group": "CHARGER_FIRMWARE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Le Chargeur Haute Intensité équipe le véhicule avec un chargeur embarqué qui fournit jusqu’à 81 kilomètres d’autonomie par heure quand il est associé à un connecteur mural Tesla ou un coffret de recharge type 2 raccordé sur une alimentation triphasée 24A. Les vitesses de charge ne sont pas modifiées pour l’utilisation de l’adaptateur CHAdeMO ou des Superchargeurs.",
+      "long_name": "Chargeur à ampérage élevé",
+      "name": "Chargeur à ampérage élevé"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$CW02",
+      "group": "COLD_WEATHER",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "<p>Améliorez le confort et la commodité par temps glacial en ajoutant les options suivantes :</p> <ul><li>Sièges chauffants dans l'ensemble du véhicule</li><li>Volant chauffant</li><li>Dégivreur d'essuie-glace</li><li>Chauffage des gicleurs de lave-glace</li></ul>",
+      "long_name": "Pack hiver",
+      "name": "Pack hiver"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$COFR",
+      "group": "COUNTRY",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "$COFR",
+      "long_name": "$COFR",
+      "name": "$COFR"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$X039",
+      "group": "DAB_RADIO",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "DAB Radio",
+      "long_name": "DAB Radio",
+      "name": "DAB Radio"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$IDCF",
+      "group": "DECOR",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Fibre de carbone",
+      "long_name": "Finitions en fibre de carbone",
+      "name": "Finitions en fibre de carbone"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$X027",
+      "group": "DOOR_HANDLE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Lighted Door Handles",
+      "long_name": "Lighted Door Handles",
+      "name": "Lighted Door Handles"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$DRLH",
+      "group": "DRIVE_SIDE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Conduite à droite",
+      "long_name": "Conduite à droite",
+      "name": "Conduite à droite"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$DU00",
+      "group": "DRIVE_UNIT",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Drive Unit - IR",
+      "long_name": "Drive Unit - IR",
+      "name": "Drive Unit - IR"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$AF02",
+      "group": "FILTER",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "$AF02",
+      "long_name": "Système de filtration d'air HEPA",
+      "name": "Système de filtration d'air HEPA"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$FMP6",
+      "group": "FIRMWARE_PERFORMANCE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "FMP6",
+      "long_name": "FMP6",
+      "name": "FMP6"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$FG02",
+      "group": "FOG_LAMP",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Passez à travers le brouillard et éclairez les obstacles sur les routes sombres avec les feux antibrouillard LED que vous pouvez commander grâce à l'écran tactile. Les feux antibrouillard ont été récemment réétudiés afin de fonctionner avec nos feux directionnels à LED et nos phares en tant que système complet.",
+      "long_name": "Exterior Lighting Package",
+      "name": "Exterior Lighting Package"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$DCF0",
+      "group": "FRONT_CONSOLE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "DCF0",
+      "long_name": "DCF0",
+      "name": "DCF0"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$FR04",
+      "group": "FRONT_ROW_SEAT",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "FR04",
+      "long_name": "FR04",
+      "name": "FR04"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$X007",
+      "group": "HEAD_LAMP",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "LED Daytime Running Lights",
+      "long_name": "LED Daytime Running Lights",
+      "name": "LED Daytime Running Lights"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$X011",
+      "group": "HOMELINK",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Override: Homelink",
+      "long_name": "Homelink GPS",
+      "name": "Homelink GPS"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$INBPW",
+      "group": "INTERIOR_BUNDLE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Nos sièges blancs résistent aux tâches, sont faciles à nettoyer et gardent un confort inégalé même après des centaines d'heures d'essai et d'utilisation. Recommandés par Tesla.",
+      "long_name": "Blanc",
+      "name": "Blanc"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$PI01",
+      "group": "INTERIOR_PACKAGE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "<div class='columns col2'> <div class='col1'> <ul> <li>Protégez-vous des virus et bactéries à l'intérieur d'un habitacle équipé d'un filtre à air HEPA de qualité médicale<br />Mode de défense contre les armes bactériologiques inclus</li> <li>Bloquez les odeurs nauséabondes, les oxydes d'hydrogène et fumées d'hydrocarbures et les empêche de pénétrer l'habitacle grâce à deux purificateurs à filtres de carbone.</li> </ul> </div> <div class='col2 morebuffer'> <ul><li>Système audio haut-de-gamme spécialement calibré pour les habitacles ultra silencieux des Tesla</li><li>Les équipements Sub-Zero incluent des sièges chauffants avant et arrière, un volant chauffant, des dégivreurs d'essuie-glace et des lave-vitres chauffants.</li></ul> </div> </div>",
+      "long_name": "Pack d'extensions Premium",
+      "name": "Pack d'extensions Premium"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$IX00",
+      "group": "LEATHER",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "No Extended Nappa Leather Trim",
+      "long_name": "No Extended Nappa Leather Trim",
+      "name": "White"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$X001",
+      "group": "LIFTGATE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Override: Power Liftgate",
+      "long_name": "Hayon électrique",
+      "name": "Hayon électrique"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$LP01",
+      "group": "LIGHTING_PACKAGE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Créez une ambiance particulière à bord de votre Model S grâce aux LED placées de façon stratégique afin de ne produire aucun reflet sur votre pare-brise. L'éclairage intérieur comprend des : <ul><li>lumières d'ambiance sur les panneaux des portières</li><li>éclairages des espaces pour les jambes (arrière)</li><li>éclairages des passages de portes</li></ul>",
+      "long_name": "Éclairage intérieur haute qualité",
+      "name": "Éclairage intérieur haute qualité"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$MI01",
+      "group": "MFG_INTRO",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "MI01",
+      "long_name": "MI01",
+      "name": "MI01"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$X037",
+      "group": "MIRROR",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Powerfolding Mirrors",
+      "long_name": "Powerfolding Mirrors",
+      "name": "Powerfolding Mirrors"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$MDLS",
+      "group": "MODEL",
+      "price": 26880,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Model S",
+      "long_name": "Model S",
+      "name": "Model S"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$DV4W",
+      "group": "MOTOR",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Transmission Intégrale Dual Motor",
+      "long_name": "Transmission Intégrale Dual Motor",
+      "name": "Transmission Intégrale Dual Motor"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$X025",
+      "group": "MOTOR_TYPE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Pas de pack Performance",
+      "long_name": "Pas de pack Performance",
+      "name": "Pas de pack Performance"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$X003",
+      "group": "NAVIGATION",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Maps & Navigation",
+      "long_name": "Maps & Navigation",
+      "name": "Maps & Navigation"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$PPSB",
+      "group": "PAINT",
+      "price": 1600,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Bleu Outremer Métallisé",
+      "long_name": "Bleu Outremer Métallisé Coloris",
+      "name": "Bleu Outremer Métallisé"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$PS01",
+      "group": "PARCEL_SHELF",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Abritez des regards indiscrets vos effets personnels se trouvant dans le coffre grâce à la plage arrière amovible qui se glisse entre les sièges arrière et la vitre arrière.",
+      "long_name": "Plage arrière",
+      "name": "Plage arrière"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$PK00",
+      "group": "PARK_ASSIST",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Sans système d'aide au stationnement",
+      "long_name": "Sans système d'aide au stationnement",
+      "name": "Sans système d'aide au stationnement"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$X031",
+      "group": "PASSIVE_ENTRY",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Keyless Entry",
+      "long_name": "Accès sans clé",
+      "name": "Accès sans clé"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$PX00",
+      "group": "PERF_PACKAGE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Pas de Pack Performance Plus",
+      "long_name": "Pas de Pack Performance Plus",
+      "name": "Pas de Pack Performance Plus"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$PF00",
+      "group": "PERFORMANCE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Aucun pack Performance hérité",
+      "long_name": "Aucun pack Performance hérité",
+      "name": "Aucun pack Performance hérité"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$X043",
+      "group": "PHONE_CONNECTOR",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "No Phone Dock Kit",
+      "long_name": "No Phone Dock Kit",
+      "name": "No Phone Dock Kit"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$TM00",
+      "group": "PRODUCTION_TRIM",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "General Production Trim",
+      "long_name": "General Production Trim",
+      "name": "General Production Trim"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$BR00",
+      "group": "RANGE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "<p>Comprend la transmission intégrale Dual Motor, l'intérieur Premium et le système audio haute-fidélité.</p>",
+      "long_name": "Grande Autonomie",
+      "name": "Grande Autonomie"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$REEU",
+      "group": "REGION",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "$REEU",
+      "long_name": "$REEU",
+      "name": "$REEU"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$RFFG",
+      "group": "ROOF",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Toit rétractable fabriqué dans du verre léger de sécurité, qui dépasse les normes en vigueur et bloque 98% des rayons ultraviolets et 81 % de la chaleur du soleil. Équipé de points de fixation pour une galerie de toit.",
+      "long_name": "Toit panoramique",
+      "name": "Toit panoramique"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$X014",
+      "group": "SATELLITE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Override: No Satellite Radio",
+      "long_name": "Override: No Satellite Radio",
+      "name": "Override: No Satellite Radio"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$ME02",
+      "group": "SEAT_MEMORY",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Memory Seats",
+      "long_name": "Memory Seats",
+      "name": "Memory Seats"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$QTPW",
+      "group": "SEAT_PACKAGE",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Sièges Tesla ultra blancs Premium",
+      "long_name": "Sièges Tesla Premium ultra-blancs",
+      "name": "Sièges Tesla Premium ultra-blancs"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$SR01",
+      "group": "SECOND_ROW_SEAT",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Standard 2nd row",
+      "long_name": "Habitacle 7 sièges",
+      "name": "Habitacle 7 sièges"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$SP01",
+      "group": "SECURITY",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Protégez votre Model S grâce à l'alarme anti-intrusion avec détecteur de mouvement. Cette dernière est alimentée par une batterie indépendante. Cette batterie secondaire est indépendante du système électronique du véhicule et restera opérationnelle même si des voleurs tentent de désactiver le système électrique 12 volts.",
+      "long_name": "Pack Sécurité ",
+      "name": "Pack Sécurité "
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$X021",
+      "group": "SPOILER",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Pas de diffuseur arrière en fibre de carbone",
+      "long_name": "Pas de diffuseur arrière en fibre de carbone",
+      "name": "Pas de diffuseur arrière"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$SC04",
+      "group": "SUPER_CHARGER",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Paiement de la Supercharge à l'utilisation",
+      "long_name": "Paiement de la Supercharge à l'utilisation",
+      "name": "Paiement de la Supercharge à l'utilisation"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$SU01",
+      "group": "SUSPENSION",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Découvrez une maniabilité, des performances et un confort de conduite exceptionnels. Ajustez la hauteur de caisse de votre Model S. De plus, la Suspension Smart Air utilise le GPS de votre voiture pour mémoriser les réglages en fonction de la localisation, et s'adapte automatiquement à certains lieux spécifiques, comme par exemple une rampe d'accès.",
+      "long_name": "Suspension Smart Air",
+      "name": "Suspension Smart Air"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$TR00",
+      "group": "THIRD_ROW_SEAT",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Pas de troisième rangée de sièges",
+      "long_name": "Pas de troisième rangée de sièges",
+      "name": "Pas de troisième rangée de sièges"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$DSH5",
+      "group": "TOP_PAD",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "PUR Dash Pad",
+      "long_name": "PUR Dash Pad",
+      "name": "PUR Dash Pad"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$MT10A",
+      "group": "TRIM",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "$MT10A",
+      "long_name": "100D Grande Autonomie",
+      "name": "100D Grande Autonomie"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$UTAB",
+      "group": "UPPER_TRIM",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Agrémentez l'intérieur de votre Model S à l'aide de notre superbe garniture de toit en Alcantara, un matériau synthétique de haute qualité, à l'apparence et au toucher de velours. Elle recouvre le dessus des fenêtres et des pare-soleil.",
+      "long_name": "Garniture de toit noir",
+      "name": "Garniture de toit noir"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$WTAS",
+      "group": "WHEELS",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Pneus toutes saisons hautes performances Goodyear Eagle RS-A2 inclus.",
+      "long_name": "Jantes argent Slipstream 19\"",
+      "name": "Jantes argent Slipstream 19\""
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$YFCC",
+      "group": "YATCH_FLOOR",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "YFCC",
+      "long_name": "YFCC",
+      "name": "YFCC"
+    },
+    {
+      "acceleration_unit_long": null,
+      "acceleration_unit_short": null,
+      "acceleration_value": null,
+      "code": "$CPF0",
+      "group": "CONNECTIVITY",
+      "price": 0,
+      "unit_long": null,
+      "unit_short": null,
+      "value": null,
+      "range_source": null,
+      "description": "Connectivité standard",
+      "long_name": "Connectivité standard",
+      "name": "Connectivité standard"
+    }
+  ],
+  "OptionCodeList": "$BP02,$ADPX2,$AU01,$APF1,$APH2,$APPB,$X028,$BTX6,$BS00,$BCMB,$CH04,$CF00,$CW02,$COFR,$X039,$IDCF,$X027,$DRLH,$DU00,$AF02,$FMP6,$FG02,$DCF0,$FR04,$X007,$X011,$INBPW,$PI01,$IX00,$X001,$LP01,$MI01,$X037,$MDLS,$DV4W,$X025,$X003,$PPSB,$PS01,$PK00,$X031,$PX00,$PF00,$X043,$TM00,$BR00,$REEU,$RFFG,$X014,$ME02,$QTPW,$SR01,$SP01,$X021,$SC04,$SU01,$TR00,$DSH5,$MT10A,$UTAB,$WTAS,$YFCC,$CPF0",
+  "OptionCodeListDisplayOnly": "$X031,$RFFG,$MI01,$APPB,$X007,$QTPW,$CW02,$COFR,$X039,$FG02,$DSH5,$APF1,$X003,$PPSB,$PI01,$UTAB,$X001,$BTX6,$X027,$FR04,$X043,$MT10A,$WTAS,$AU01,$X037,$SU01,$DRLH,$ME02,$CF00,$PS01,$INBPW,$X028,$CH04,$DV4W,$BP02,$SR01,$IDCF,$AF02,$FMP6,$SP01,$DCF0,$MDLS,$CPF0,$APH2,$REEU,$LP01,$X011",
+  "OptionCodePricing": [
+    {
+      "code": "$BP02",
+      "group": "ACCELERATION",
+      "price": 0
+    },
+    {
+      "code": "$ADPX2",
+      "group": "ADAPTER",
+      "price": 0
+    },
+    {
+      "code": "$AU01",
+      "group": "AUDIO",
+      "price": 0
+    },
+    {
+      "code": "$APF1",
+      "group": "AUTOPILOT_FIRMWARE",
+      "price": 0
+    },
+    {
+      "code": "$APH2",
+      "group": "AUTOPILOT_HARDWARE",
+      "price": 0
+    },
+    {
+      "code": "$APPB",
+      "group": "AUTOPILOT_PACKAGE",
+      "price": 3800
+    },
+    {
+      "code": "$X028",
+      "group": "BADGE",
+      "price": 0
+    },
+    {
+      "code": "$BTX6",
+      "group": "BATTERY",
+      "price": 0
+    },
+    {
+      "code": "$BS00",
+      "group": "BLIND_SPOT",
+      "price": 0
+    },
+    {
+      "code": "$BCMB",
+      "group": "CALIPER",
+      "price": 0
+    },
+    {
+      "code": "$CH04",
+      "group": "CHARGER",
+      "price": 0
+    },
+    {
+      "code": "$CF00",
+      "group": "CHARGER_FIRMWARE",
+      "price": 0
+    },
+    {
+      "code": "$CW02",
+      "group": "COLD_WEATHER",
+      "price": 0
+    },
+    {
+      "code": "$COFR",
+      "group": "COUNTRY",
+      "price": 0
+    },
+    {
+      "code": "$X039",
+      "group": "DAB_RADIO",
+      "price": 0
+    },
+    {
+      "code": "$IDCF",
+      "group": "DECOR",
+      "price": 0
+    },
+    {
+      "code": "$X027",
+      "group": "DOOR_HANDLE",
+      "price": 0
+    },
+    {
+      "code": "$DRLH",
+      "group": "DRIVE_SIDE",
+      "price": 0
+    },
+    {
+      "code": "$DU00",
+      "group": "DRIVE_UNIT",
+      "price": 0
+    },
+    {
+      "code": "$AF02",
+      "group": "FILTER",
+      "price": 0
+    },
+    {
+      "code": "$FMP6",
+      "group": "FIRMWARE_PERFORMANCE",
+      "price": 0
+    },
+    {
+      "code": "$FG02",
+      "group": "FOG_LAMP",
+      "price": 0
+    },
+    {
+      "code": "$DCF0",
+      "group": "FRONT_CONSOLE",
+      "price": 0
+    },
+    {
+      "code": "$FR04",
+      "group": "FRONT_ROW_SEAT",
+      "price": 0
+    },
+    {
+      "code": "$X007",
+      "group": "HEAD_LAMP",
+      "price": 0
+    },
+    {
+      "code": "$X011",
+      "group": "HOMELINK",
+      "price": 0
+    },
+    {
+      "code": "$INBPW",
+      "group": "INTERIOR_BUNDLE",
+      "price": 1600
+    },
+    {
+      "code": "$PI01",
+      "group": "INTERIOR_PACKAGE",
+      "price": 0
+    },
+    {
+      "code": "$IX00",
+      "group": "LEATHER",
+      "price": 0
+    },
+    {
+      "code": "$X001",
+      "group": "LIFTGATE",
+      "price": 0
+    },
+    {
+      "code": "$LP01",
+      "group": "LIGHTING_PACKAGE",
+      "price": 0
+    },
+    {
+      "code": "$MI01",
+      "group": "MFG_INTRO",
+      "price": 0
+    },
+    {
+      "code": "$X037",
+      "group": "MIRROR",
+      "price": 0
+    },
+    {
+      "code": "$MDLS",
+      "group": "MODEL",
+      "price": 26880
+    },
+    {
+      "code": "$DV4W",
+      "group": "MOTOR",
+      "price": 0
+    },
+    {
+      "code": "$X025",
+      "group": "MOTOR_TYPE",
+      "price": 0
+    },
+    {
+      "code": "$X003",
+      "group": "NAVIGATION",
+      "price": 0
+    },
+    {
+      "code": "$PPSB",
+      "group": "PAINT",
+      "price": 1600
+    },
+    {
+      "code": "$PS01",
+      "group": "PARCEL_SHELF",
+      "price": 0
+    },
+    {
+      "code": "$PK00",
+      "group": "PARK_ASSIST",
+      "price": 0
+    },
+    {
+      "code": "$X031",
+      "group": "PASSIVE_ENTRY",
+      "price": 0
+    },
+    {
+      "code": "$PX00",
+      "group": "PERF_PACKAGE",
+      "price": 0
+    },
+    {
+      "code": "$PF00",
+      "group": "PERFORMANCE",
+      "price": 0
+    },
+    {
+      "code": "$X043",
+      "group": "PHONE_CONNECTOR",
+      "price": 0
+    },
+    {
+      "code": "$TM00",
+      "group": "PRODUCTION_TRIM",
+      "price": 0
+    },
+    {
+      "code": "$BR00",
+      "group": "RANGE",
+      "price": 0
+    },
+    {
+      "code": "$REEU",
+      "group": "REGION",
+      "price": 0
+    },
+    {
+      "code": "$RFFG",
+      "group": "ROOF",
+      "price": 0
+    },
+    {
+      "code": "$X014",
+      "group": "SATELLITE",
+      "price": 0
+    },
+    {
+      "code": "$ME02",
+      "group": "SEAT_MEMORY",
+      "price": 0
+    },
+    {
+      "code": "$QTPW",
+      "group": "SEAT_PACKAGE",
+      "price": 0
+    },
+    {
+      "code": "$SR01",
+      "group": "SECOND_ROW_SEAT",
+      "price": 0
+    },
+    {
+      "code": "$SP01",
+      "group": "SECURITY",
+      "price": 0
+    },
+    {
+      "code": "$X021",
+      "group": "SPOILER",
+      "price": 0
+    },
+    {
+      "code": "$SC04",
+      "group": "SUPER_CHARGER",
+      "price": 0
+    },
+    {
+      "code": "$SU01",
+      "group": "SUSPENSION",
+      "price": 0
+    },
+    {
+      "code": "$TR00",
+      "group": "THIRD_ROW_SEAT",
+      "price": 0
+    },
+    {
+      "code": "$DSH5",
+      "group": "TOP_PAD",
+      "price": 0
+    },
+    {
+      "code": "$MT10A",
+      "group": "TRIM",
+      "price": 53110
+    },
+    {
+      "code": "$UTAB",
+      "group": "UPPER_TRIM",
+      "price": 0
+    },
+    {
+      "code": "$WTAS",
+      "group": "WHEEL",
+      "price": 0
+    },
+    {
+      "code": "$YFCC",
+      "group": "YATCH_FLOOR",
+      "price": 0
+    },
+    {
+      "code": "$CPF0",
+      "group": "CONNECTIVITY",
+      "price": 0
+    }
+  ],
+  "OrderFee": {
+    "type": "order_fee",
+    "value": 0
+  },
+  "OriginalDeliveryDate": "2017-09-29T00:00:00",
+  "OriginalInCustomerGarageDate": "2017-09-29T00:00:00",
+  "PAINT": [
+    "BLUE"
+  ],
+  "PlannedGADailyDate": null,
+  "PreownedWarrantyEligibility": null,
+  "Price": 67900,
+  "PurchasePrice": 67900,
+  "ROOF": [
+    "ROOF_GLASS"
+  ],
+  "RefurbishmentCompletionETA": "2021-10-29T22:00:00",
+  "SalesMetro": "Paris",
+  "SalesNotes": null,
+  "StateProvince": null,
+  "StateProvinceLongName": null,
+  "TRIM": [
+    "100DE"
+  ],
+  "TaxScheme": "VAT",
+  "ThirdPartyHistoryUrl": null,
+  "TilburgFactoryGatedDate": null,
+  "TilburgGAInDate": null,
+  "TitleReceivedOwnershipTransferDate": null,
+  "TitleStatus": "USED",
+  "TitleSubtype": [
+    "BRANDNEW"
+  ],
+  "TotalPrice": 67900,
+  "TransportFees": {
+    "exemptVRL": [],
+    "fees": [],
+    "metro_fees": []
+  },
+  "TrimCode": "$MT10A",
+  "TrimName": "100D Grande Autonomie",
+  "Trt": 292,
+  "TrtName": "Paris-Chambourcy",
+  "UsedVehiclePhotosCompletedDate": "2021-10-19T22:00:00",
+  "VIN": "5YJSA7E20HF213312",
+  "Variant": null,
+  "VehicleHistory": null,
+  "VehicleRegion": "",
+  "VrlName": "Paris-Chambourcy",
+  "WHEELS": [
+    "NINETEEN"
+  ],
+  "WarrantyBatteryExpDate": "2025-09-29T09:25:09Z",
+  "WarrantyBatteryIsExpired": false,
+  "WarrantyBatteryMile": 0,
+  "WarrantyBatteryYear": 8,
+  "WarrantyData": {
+    "UsedVehicleLimitedWarrantyMile": 20000,
+    "UsedVehicleLimitedWarrantyYear": 1,
+    "WarrantyBatteryExpDate": "2025-09-29T09:25:09Z",
+    "WarrantyBatteryIsExpired": false,
+    "WarrantyBatteryMile": 0,
+    "WarrantyBatteryYear": 8,
+    "WarrantyDriveUnitExpDate": "2025-09-29T09:25:09Z",
+    "WarrantyDriveUnitMile": 0,
+    "WarrantyDriveUnitYear": 8,
+    "WarrantyMile": 80000,
+    "WarrantyVehicleExpDate": "2021-09-29T00:00:00Z",
+    "WarrantyVehicleIsExpired": true,
+    "WarrantyYear": 4
+  },
+  "WarrantyDriveUnitExpDate": "2025-09-29T09:25:09Z",
+  "WarrantyDriveUnitMile": 0,
+  "WarrantyDriveUnitYear": 8,
+  "WarrantyMile": 80000,
+  "WarrantyVehicleExpDate": "2021-09-29T00:00:00Z",
+  "WarrantyVehicleIsExpired": true,
+  "WarrantyYear": 4,
+  "Year": 2017,
+  "UsedVehicleLimitedWarrantyMile": 20000,
+  "UsedVehicleLimitedWarrantyYear": 1,
+  "DeliveryDateDisplay": true,
+  "Hash": null,
+  "Odometer": 46545,
+  "OptionCodeSpecs": {
+    "C_SPECS": {
+      "code": "C_SPECS",
+      "name": "Specs",
+      "options": [
+        {
+          "code": "SPECS_ACCELERATION",
+          "name": "4,3 sec",
+          "long_name": "4,3 secondes",
+          "description": "0-100 km/h",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "SPECS_TOP_SPEED",
+          "name": "249 km/h",
+          "long_name": "249 kilomètres par heure",
+          "description": "Vitesse maximale",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "SPECS_RANGE",
+          "name": "632 km",
+          "long_name": "632 kilomètres",
+          "description": "autonomie (NEDC)",
+          "group": null,
+          "list": null,
+          "period": null
+        }
+      ]
+    },
+    "C_DESIGN": {
+      "code": "C_DESIGN",
+      "name": "Design",
+      "options": []
+    },
+    "C_CALLOUTS": {
+      "code": "C_CALLOUTS",
+      "name": "Callout Features",
+      "options": [
+        {
+          "code": "$APPB",
+          "name": "Autopilot amélioré",
+          "long_name": "",
+          "description": "<p>\r\nLe pilotage automatique amélioré ajoute de nouvelles fonctionnalités à l'expérience de conduite Tesla. Parmi ces améliorations, le passage du nombre de caméras de une à quatre pour une plus grande exactitude et une meilleure capacité à capter tous véhicules s'approchant dans les voies adjacentes. De plus, 12 capteurs ultrasoniques offrent une couverture à 360° autour de votre Tesla avec une définition deux fois supérieure à la génération précédente. </p> <p> Toutes les informations générées par ces capteurs dernière génération sont traitées par un ordinateur 40 fois plus puissant qu'auparavant. Votre Tesla pourra adapter sa vitesse au trafic, rester dans sa voie, changer de voie avec fluidité sans intervention du conducteur, bifurquer vers une autre autoroute, sortir de celle-ci une fois votre destination proche, se garer toute seule quand vous êtes à proximité d'un parking ou manœuvrer pour sortir et entrer de votre garage. Ceci étant dit, le pilotage automatique amélioré doit être considéré comme un assistant à la conduite et il est de la responsabilité du conducteur de rester maître de son véhicule en toutes circonstances.\r\n</p>\r\n<p>Le Pilotage automatique amélioré Tesla a commencé à être déployé. D'autres fonctionnalités feront bientôt leur apparition sous réserve d'approbations réglementaires.</p>",
+          "group": "AUTOPILOT_PACKAGE",
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "PCT1M",
+          "name": "Essai de Connexion Premium pendant 30 jours",
+          "long_name": null,
+          "description": "Essai de Connexion Premium pendant 30 jours",
+          "group": "CONNECTIVITY",
+          "list": [
+            "satelliteMaps",
+            "musicStreaming",
+            "internetBrowser"
+          ],
+          "period": "30 jours"
+        }
+      ]
+    },
+    "C_OPTS": {
+      "code": "C_OPTS",
+      "name": "Options",
+      "options": [
+        {
+          "code": "$PPSB",
+          "name": "Bleu Outremer Métallisé Coloris",
+          "long_name": "",
+          "description": "Bleu Outremer Métallisé",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "$WTAS",
+          "name": "Jantes argent Slipstream 19\"",
+          "long_name": "",
+          "description": "Pneus toutes saisons hautes performances Goodyear Eagle RS-A2 inclus.",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "$QTPW",
+          "name": "Sièges Tesla Premium ultra-blancs",
+          "long_name": "",
+          "description": "Sièges Tesla ultra blancs Premium",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "$APPB",
+          "name": "Autopilot amélioré",
+          "long_name": "",
+          "description": "<p>\r\nLe pilotage automatique amélioré ajoute de nouvelles fonctionnalités à l'expérience de conduite Tesla. Parmi ces améliorations, le passage du nombre de caméras de une à quatre pour une plus grande exactitude et une meilleure capacité à capter tous véhicules s'approchant dans les voies adjacentes. De plus, 12 capteurs ultrasoniques offrent une couverture à 360° autour de votre Tesla avec une définition deux fois supérieure à la génération précédente. </p> <p> Toutes les informations générées par ces capteurs dernière génération sont traitées par un ordinateur 40 fois plus puissant qu'auparavant. Votre Tesla pourra adapter sa vitesse au trafic, rester dans sa voie, changer de voie avec fluidité sans intervention du conducteur, bifurquer vers une autre autoroute, sortir de celle-ci une fois votre destination proche, se garer toute seule quand vous êtes à proximité d'un parking ou manœuvrer pour sortir et entrer de votre garage. Ceci étant dit, le pilotage automatique amélioré doit être considéré comme un assistant à la conduite et il est de la responsabilité du conducteur de rester maître de son véhicule en toutes circonstances.\r\n</p>\r\n<p>Le Pilotage automatique amélioré Tesla a commencé à être déployé. D'autres fonctionnalités feront bientôt leur apparition sous réserve d'approbations réglementaires.</p>",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "$SU01",
+          "name": "Suspension Smart Air",
+          "long_name": "",
+          "description": "Découvrez une maniabilité, des performances et un confort de conduite exceptionnels. Ajustez la hauteur de caisse de votre Model S. De plus, la Suspension Smart Air utilise le GPS de votre voiture pour mémoriser les réglages en fonction de la localisation, et s'adapte automatiquement à certains lieux spécifiques, comme par exemple une rampe d'accès.",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "$RFFG",
+          "name": "Toit panoramique",
+          "long_name": "",
+          "description": "Toit rétractable fabriqué dans du verre léger de sécurité, qui dépasse les normes en vigueur et bloque 98% des rayons ultraviolets et 81 % de la chaleur du soleil. Équipé de points de fixation pour une galerie de toit.",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "$AU01",
+          "name": "Son très haute fidélité",
+          "long_name": "",
+          "description": "<p>Enveloppez votre habitacle d'une acoustique à la fois puissante et cristalline. Cette extension comprend : un puissant amplificateur, un caisson de basse et 11 haut-parleurs méticuleusement positionnés pour restituer et délivrer un son parfait pour vous et vos passagers. Un système sur-mesure, dédié aux audiophiles, qui tire tout son avantage de l'habitacle spacieux et du moteur silencieux du Model S. Résultat unanime : une expérience unique dans le monde de l'automobile, dépassant largement les meilleurs systèmes et les plus onéreux en écoute à l'aveugle. Ce pack comprend :</p> <ul> <li>11 haut-parleurs avec aimants en néodyme dont un caisson de basse de 8 \"</li></ul>",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "$AF02",
+          "name": "Système de filtration d'air HEPA",
+          "long_name": "",
+          "description": "$AF02",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "$CW02",
+          "name": "Pack Climat Glacial",
+          "long_name": "",
+          "description": "<p>Améliorez le confort et la commodité par temps glacial en ajoutant les options suivantes :</p> <ul><li>Sièges chauffants dans l'ensemble du véhicule</li><li>Volant chauffant</li><li>Dégivreur d'essuie-glace</li><li>Chauffage des gicleurs de lave-glace</li></ul>",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "$X031",
+          "name": "Accès sans clé",
+          "long_name": "",
+          "description": "Keyless Entry",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "$X001",
+          "name": "Coffre à ouverture électrique",
+          "long_name": "",
+          "description": "Override: Power Liftgate",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "$X011",
+          "name": "Homelink GPS",
+          "long_name": "",
+          "description": "Override: Homelink",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "$IDCF",
+          "name": "Finitions en fibre de carbone",
+          "long_name": "",
+          "description": "Fibre de carbone",
+          "group": null,
+          "list": null,
+          "period": null
+        },
+        {
+          "code": "$UTAB",
+          "name": "Garniture de toit noire",
+          "long_name": "",
+          "description": "Agrémentez l'intérieur de votre Model S à l'aide de notre superbe garniture de toit en Alcantara, un matériau synthétique de haute qualité, à l'apparence et au toucher de velours. Elle recouvre le dessus des fenêtres et des pare-soleil.",
+          "group": null,
+          "list": null,
+          "period": null
+        }
+      ]
+    }
+  },
+  "CompositorViewsCustom": {
+    "isProductWithCustomViews": true,
+    "externalZoom": {
+      "order": 1,
+      "details": 1,
+      "search": 1
+    }
+  },
+  "IsRangeStandard": true,
+  "MetroName": "Chambourcy",
+  "geoPoints": [
+    [
+      "48.9115131,2.0291365",
+      292
+    ]
+  ],
+  "HasMarketingOptions": true,
+  "IsFactoryGated": false,
+  "DetailsUrl": "https://www.tesla.com/fr_FR/used/5YJSA7E20HF213312"
+}

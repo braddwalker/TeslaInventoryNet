@@ -30,11 +30,30 @@ namespace TeslaInventoryNet.Test
         {
             tesla.Search(new Location()
             {
-                Country = "foo",
                 Language = "foo",
-                Market = "foo",
-                Region = "foo"
+                Market = "foo"
             }, new SearchCriteria() { Model = "m3", Condition = "new"});
+        }
+
+        /*
+        * API is returning failures for CA for some reason
+        [TestMethod]
+        public void Search_CA_Used_NotNull()
+        {
+            Assert.IsNotNull(tesla.Search(Location.CA, new SearchCriteria() { Model = "m3", Condition = "used"}));
+        }
+        */
+
+        [TestMethod]
+        public void Search_FR_Used_NotNull()
+        {
+            Assert.IsNotNull(tesla.Search(Location.FR, new SearchCriteria() { Model = "m3", Condition = "used"}));
+        }
+
+        [TestMethod]
+        public void Search_UK_Used_NotNull()
+        {
+            Assert.IsNotNull(tesla.Search(Location.UK, new SearchCriteria() { Model = "m3", Condition = "used"}));
         }
 
         [TestMethod]

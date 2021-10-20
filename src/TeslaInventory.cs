@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using RestSharp;
 using System;
 using System.Net;
@@ -64,13 +65,13 @@ namespace TeslaInventoryNet
                 query = new {
                     model = criteria.Model,
                     condition = criteria.Condition,
-                    country = location.Country,
                     market = location.Market,
-                    language = location.Language,
-                    region = location.Region
+                    language = location.Language
                 },
                 offset = criteria.Offset,
-                count = criteria.Count
+                count = criteria.Count,
+                outsideOffset = 0,
+                outsideSearch = false
             });
 
             logger.LogDebug($"Query: {query}");
@@ -102,8 +103,20 @@ namespace TeslaInventoryNet
                     throw new Exception($"Error calling Tesla API - {error.Code}: {error.Error} - {JsonConvert.SerializeObject(query)}");
                 }
 
-                // Deserialize the actual results and return the relevant portion
-                var results = JsonConvert.DeserializeObject<SearchResult>(response.Content);
+                // Deserialize the actual results and return the relevant portions
+                // Start with a dynamic object because results can come back in more than one format
+                dynamic raw = JsonConvert.DeserializeObject(response.Content);
+                var results = new SearchResult();
+
+                if (raw.results is JArray)
+                {
+                    results = JsonConvert.DeserializeObject<SearchResult>(response.Content);
+                }
+                else 
+                {
+                    results.TotalMatchesFound = raw.total_matches_found;
+                    results.Vehicles = JsonConvert.DeserializeObject<Vehicle[]>(JsonConvert.SerializeObject(raw.exact)) ?? new Vehicle[0];
+                }
 
                 // generate the image URLs
                 foreach (var vehicle in results.Vehicles)
@@ -123,6 +136,16 @@ namespace TeslaInventoryNet
                     if (!string.IsNullOrWhiteSpace(vehicle.CompositorViews.SideView))
                     {
                         vehicle.CompositorUrls.SideView = BuildImageUrl(vehicle.CompositorViews.SideView, vehicle);
+                    }
+
+                    // build the details URL
+                    if (location == Location.US)
+                    {
+                        vehicle.DetailsUrl = $"https://www.tesla.com/{vehicle.Model}/order/{vehicle.Vin}";
+                    }
+                    else 
+                    {
+                        vehicle.DetailsUrl = $"https://www.tesla.com/{location.Language}_{location.Market}/{criteria.Condition}/{vehicle.Vin}";
                     }
                 }
 

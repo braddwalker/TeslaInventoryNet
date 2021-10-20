@@ -517,6 +517,7 @@ namespace TeslaInventoryNet
         public object[] geoPoints { get; set; }
         public bool HasMarketingOptions { get; set; }
         public bool IsFactoryGated { get; set; }
+        public string DetailsUrl { get; set; }
 
         public override string ToString()
         {
