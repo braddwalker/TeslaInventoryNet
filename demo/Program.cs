@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.Extensions.Logging;
+using System.Globalization;
 
 namespace TeslaInventoryNet.Demo
 {
@@ -15,7 +16,7 @@ namespace TeslaInventoryNet.Demo
 
             var logger = loggerFactory.CreateLogger<Program>();
             var tesla = new TeslaInventory(loggerFactory.CreateLogger<TeslaInventory>());
-            var location = Location.ES;
+            var location = Location.US;
 
             tesla.Search(location, new SearchCriteria() { Model = "m3", Condition = "used", Count = 100},
                 (results) => {
@@ -24,7 +25,7 @@ namespace TeslaInventoryNet.Demo
                     foreach (var result in results.Vehicles)
                     {
                         logger.LogInformation(result.DetailsUrl
-                                    + $"\n{result.Year} {result.Model}"
+                                    + $"\n{result.Year} {result.Model} - {result.InventoryPrice.ToString("C0", new CultureInfo($"{location.Language}-{location.Market}"))}"
                                     + $"\n{result.TrimName}" + (result.IsDemo ? " Demo" : "")
                                     + $"\n{result.OptionCodeData.Where(x => x.Group == "PAINT").Select(x => x.Name).FirstOrDefault()}"
                                     + (result.Autopilot.Contains("AUTOPILOT_FULL_SELF_DRIVING") ? "\nFull Self-Driving Capability" : "")

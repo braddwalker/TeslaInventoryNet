@@ -19,6 +19,7 @@ namespace TeslaInventoryNet
         public static Location US = new Location() { Market = "US", Language = "en" };
         public static Location UK = new Location() { Market = "GB", Language = "en" };
         public static Location ES = new Location() { Market = "ES", Language = "es" };
+        public static Location DE = new Location() { Market = "DE", Language = "de" };
 
         public static Location Parse(string market)
         {

@@ -155,9 +155,9 @@ namespace TeslaInventoryNet
         public string BuildDetailsUrl(string vin, string model, string condition, Location location)
         {
             // build the details URL
-            if (location == Location.US)
+            if (location == Location.US || location == Location.DE)
             {
-                return $"https://www.tesla.com/{model}/order/{vin}";
+                return $"https://www.tesla.com/{location.Language}_{location.Market}/{model}/order/{vin}";
             }
             else 
             {
