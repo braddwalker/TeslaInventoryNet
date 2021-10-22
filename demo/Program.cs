@@ -16,7 +16,8 @@ namespace TeslaInventoryNet.Demo
 
             var logger = loggerFactory.CreateLogger<Program>();
             var tesla = new TeslaInventory(loggerFactory.CreateLogger<TeslaInventory>());
-            var location = Location.DE;
+            var location = Location.US;
+
             var culture = new CultureInfo($"{location.Language}-{location.Market}");
 
             tesla.Search(location, new SearchCriteria() { Model = "m3", Condition = "new", Count = 100},
@@ -37,8 +38,6 @@ namespace TeslaInventoryNet.Demo
                                     
                                     + $"\nFactory: {result.FactoryCode}"
                                     + $"\n{result.CompositorUrls.FrontView}\n");
-
-                        //Console.WriteLine(result.ToString());
                     }
                 }
             );

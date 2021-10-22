@@ -14,12 +14,14 @@ namespace TeslaInventoryNet
             return JsonConvert.SerializeObject(this);
         }
 
+        public static Location BE = new Location() { Market = "BE", Language = "fr" };
         public static Location CA = new Location() { Market = "CA", Language = "en" };
+        public static Location DE = new Location() { Market = "DE", Language = "de" };
+        public static Location ES = new Location() { Market = "ES", Language = "es" };
         public static Location FR = new Location() { Market = "FR", Language = "fr" };
+        public static Location NL = new Location() { Market = "NL", Language = "nl" };
         public static Location US = new Location() { Market = "US", Language = "en" };
         public static Location UK = new Location() { Market = "GB", Language = "en" };
-        public static Location ES = new Location() { Market = "ES", Language = "es" };
-        public static Location DE = new Location() { Market = "DE", Language = "de" };
 
         public static Location Parse(string market)
         {

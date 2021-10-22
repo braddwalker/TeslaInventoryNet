@@ -1,0 +1,763 @@
+{
+    "InTransit": false,
+    "ADL_OPTS": [
+      "PERFORMANCE_UPGRADE",
+      "TOWING"
+    ],
+    "AUTOPILOT": [
+      "AUTOPILOT_FULL_SELF_DRIVING"
+    ],
+    "ActualGAInDate": "2021-08-11T05:27:24",
+    "AddToInventoryReason": null,
+    "BATTERY": null,
+    "CABIN_CONFIG": [
+      "FIVE"
+    ],
+    "CPORefurbishmentStatus": null,
+    "CPOWarrantyType": null,
+    "City": "Vaughan Woodbridge",
+    "CompositorViews": {
+      "frontView": "STUD_3QTR",
+      "sideView": "SIDE",
+      "interiorView": "STUD_SEAT"
+    },
+    "CompositorUrls": {
+      "frontView": "https://static-assets.tesla.com/v1/compositor/?model=my&view=STUD_3QTR&size=1441&bkba_opt=2&options=$MTY05,$MTY05,$MTY05,$APF2,$APBS,$BCYR,$DV4W,$INPB1,$PMNG,$PRMY1,$SC04,$MDLY,$WY21P,$SLR1,$MTY05,$PL31,$SPTY1,$STY5S,$CPF0,$TW01",
+      "sideView": "https://static-assets.tesla.com/v1/compositor/?model=my&view=SIDE&size=1441&bkba_opt=2&options=$MTY05,$MTY05,$MTY05,$APF2,$APBS,$BCYR,$DV4W,$INPB1,$PMNG,$PRMY1,$SC04,$MDLY,$WY21P,$SLR1,$MTY05,$PL31,$SPTY1,$STY5S,$CPF0,$TW01",
+      "interiorView": "https://static-assets.tesla.com/v1/compositor/?model=my&view=STUD_SEAT&size=1441&bkba_opt=2&options=$MTY05,$MTY05,$MTY05,$APF2,$APBS,$BCYR,$DV4W,$INPB1,$PMNG,$PRMY1,$SC04,$MDLY,$WY21P,$SLR1,$MTY05,$PL31,$SPTY1,$STY5S,$CPF0,$TW01"
+    },
+    "CountryCode": "CA",
+    "CountryCodes": [
+      "CA"
+    ],
+    "CountryOfOrigin": "CA",
+    "CurrencyCode": "CAD",
+    "CurrencyCodes": "CAD",
+    "DECOR": null,
+    "DRIVE": null,
+    "Decommissioned": false,
+    "DestinationHandlingFee": 0,
+    "Discount": 0,
+    "discountPercentages": 0,
+    "DisplayWarranty": false,
+    "DocumentSyncDate": "2021-10-22T13:19:55.7151825Z",
+    "EtaToCurrent": "2021-08-20T13:55:14",
+    "FactoryCode": "GF00",
+    "FixedAssets": false,
+    "FlexibleOptionsData": [
+      {
+        "code": "$APF2",
+        "description": "Full Self-Driving Capability",
+        "group": "AUTOPILOT",
+        "long_name": "Full Self-Driving Capability",
+        "name": "Full Self-Driving Capability",
+        "price": 10600
+      }
+    ],
+    "HEADLINER": null,
+    "HOVStatus": null,
+    "HasDamagePhotos": false,
+    "HasOptionCodeData": true,
+    "INTERIOR": [
+      "PREMIUM_BLACK"
+    ],
+    "InspectionDocumentGuid": null,
+    "InventoryPrice": 95800,
+    "IsAvailableForMatch": true,
+    "IsDemo": false,
+    "IsLegacy": false,
+    "IsSoftMatched": false,
+    "IsTegra": false,
+    "Language": "en",
+    "Languages": [
+      "en",
+      "fr"
+    ],
+    "LastTransformationSuccess": true,
+    "LeaseAvailabilityDate": null,
+    "LexiconDefaultOptions": [
+      {
+        "code": "$CPF0",
+        "description": "Standard Connectivity",
+        "group": "CONNECTIVITY",
+        "long_name": "Standard Connectivity",
+        "name": "Standard Connectivity"
+      },
+      {
+        "code": "$SC04",
+        "description": "Supercharger Network Access + Pay-as-you-go",
+        "group": "SUPER_CHARGER",
+        "long_name": "Supercharger Network Access + Pay-as-you-go",
+        "name": "Supercharger Network Access + Pay-as-you-go"
+      }
+    ],
+    "ListingReasons": "NO_ADJ_LOW_MILES_CA_MX",
+    "ListingType": "public",
+    "ListingTypes": "public",
+    "LoanDetails": null,
+    "ManufacturingOptionCodeList": "AD15,AF02,APF2,APH4,AU3P,BC3R,BT42,CDM0,CH16,COCA,DRLH,DV4W,FC02,FG31,FM3P,GLFR,HL32,HM30,ID3W,IL31,LTPB,MDLY,MR31,PMNG,PC31,RENA,RF3G,RS3H,S3PB,SA3P,SC04,STCP,SU3C,TY1S,TM00,TW01,UT3P,WY1S,WR00,ZINV,MI00,PL31,SLR1,ST33,BG32,I38M,USSB,AUF1,RSF1,ILF1,FGF1,CPF0,TSHP,SR05,P3WS,RL32,BY01,FCH2,FD00,RD02,SWF1,RA00,VC00",
+    "MarketingInUseDate": null,
+    "MatchType": "MANUAL",
+    "Model": "my",
+    "MonroneyPrice": 0,
+    "NeedsReview": false,
+    "OdometerType": "Km",
+    "OptionCodeData": [
+      {
+        "acceleration_unit_long": "kilometers per hour",
+        "acceleration_unit_short": "km/h",
+        "acceleration_value": "0-100",
+        "code": "$MTY05",
+        "group": "SPECS_ACCELERATION",
+        "price": 27700,
+        "unit_long": "seconds",
+        "unit_short": "s",
+        "value": "3.7",
+        "range_source": null,
+        "description": null,
+        "long_name": null,
+        "name": null
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$MTY05",
+        "group": "SPECS_TOP_SPEED",
+        "price": 27700,
+        "unit_long": "kilometers per hour",
+        "unit_short": "km/h",
+        "value": "250",
+        "range_source": null,
+        "description": null,
+        "long_name": null,
+        "name": null
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$MTY05",
+        "group": "SPECS_RANGE",
+        "price": 27700,
+        "unit_long": "kilometers",
+        "unit_short": "km",
+        "value": "488",
+        "range_source": "EPA est.",
+        "description": null,
+        "long_name": null,
+        "name": null
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$APF2",
+        "group": "AUTOPILOT",
+        "price": 10600,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Full Self-Driving Capability",
+        "long_name": "Full Self-Driving Capability",
+        "name": "Full Self-Driving Capability"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$APBS",
+        "group": "AUTOPILOT",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Autopilot",
+        "long_name": "Autopilot",
+        "name": "Autopilot"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$BCYR",
+        "group": "BRAKES",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Performance Brakes",
+        "long_name": "Performance Brakes",
+        "name": "Performance Brakes"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$DV4W",
+        "group": "DRIVE_MODE",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Dual Motor All-Wheel Drive",
+        "long_name": "Dual Motor All-Wheel Drive",
+        "name": "Dual Motor All-Wheel Drive"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$INPB1",
+        "group": "INTERIOR",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "All Black Premium Interior",
+        "long_name": "All Black Premium Interior",
+        "name": "All Black Premium Interior"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$PMNG",
+        "group": "PAINT",
+        "price": 1300,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Midnight Silver Metallic",
+        "long_name": "Midnight Silver Metallic Paint",
+        "name": "Midnight Silver Metallic"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$PRMY1",
+        "group": "PREMIUM_PACKAGE",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "<p>Upgrade your interior with additional features and premium materials.</p><ul><li><span>Premium heated seating and cabin materials throughout, including open pore wood décor, glass roof and four USB ports</span></li><li><span>12-way power adjustable front seats, steering column and side mirrors, with custom driver profiles</span></li><li><span>Premium audio system with more power, tweeters, surround speakers and subwoofer</span></li></ul>",
+        "long_name": "Premium Interior",
+        "name": "Premium Interior"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$SC04",
+        "group": "SUPER_CHARGER",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Supercharger Network Access + Pay-as-you-go",
+        "long_name": "Supercharger Network Access + Pay-as-you-go",
+        "name": "Supercharger Network Access + Pay-as-you-go"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$MDLY",
+        "group": "MODEL",
+        "price": 54900,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Deliveries are beginning in the US based on date of order and options selected.",
+        "long_name": "Model Y",
+        "name": "Model Y"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$WY21P",
+        "group": "WHEELS",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "21’’ Überturbine Wheels",
+        "long_name": "21’’ Überturbine Wheels",
+        "name": "21’’ Überturbine Wheels"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$SLR1",
+        "group": "SPOILER",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Carbon Fiber Spoiler",
+        "long_name": "Carbon Fiber Spoiler",
+        "name": "Carbon Fiber Spoiler"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$MTY05",
+        "group": "TRIM",
+        "price": 27700,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Model Y Performance AWD",
+        "long_name": "Long Range All-Wheel Drive Performance",
+        "name": "Long Range All-Wheel Drive Performance"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$PL31",
+        "group": "PEDALS",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Performance Pedals",
+        "long_name": "Performance Pedals",
+        "name": "Performance Pedals"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$SPTY1",
+        "group": "SPORT_PACKAGE",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Performance Upgrade",
+        "long_name": "Performance Upgrade",
+        "name": "Performance Upgrade"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$STY5S",
+        "group": "REAR_SEATS",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Five Seat Interior",
+        "long_name": "Five Seat Interior",
+        "name": "Five Seat Interior"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$CPF0",
+        "group": "CONNECTIVITY",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Standard Connectivity",
+        "long_name": "Standard Connectivity",
+        "name": "Standard Connectivity"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$TW01",
+        "group": "TOWING",
+        "price": 1300,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Tow Hitch",
+        "long_name": "Tow Hitch",
+        "name": "Tow Hitch"
+      }
+    ],
+    "OptionCodeList": "$APF2,$APBS,$BCYR,$DV4W,$INPB1,$PMNG,$PRMY1,$SC04,$MDLY,$WY21P,$SLR1,$MTY05,$PL31,$SPTY1,$STY5S,$CPF0,$TW01",
+    "OptionCodeListDisplayOnly": null,
+    "OptionCodePricing": [
+      {
+        "code": "$APF2",
+        "group": "AUTOPILOT_FIRMWARE",
+        "price": 10600
+      },
+      {
+        "code": "$APBS",
+        "group": "AUTOPILOT_PACKAGE",
+        "price": 0
+      },
+      {
+        "code": "$BCYR",
+        "group": "BRAKES",
+        "price": 0
+      },
+      {
+        "code": "$DV4W",
+        "group": "DRIVE_MODE",
+        "price": 0
+      },
+      {
+        "code": "$INPB1",
+        "group": "INTERIOR",
+        "price": 0
+      },
+      {
+        "code": "$PMNG",
+        "group": "PAINT",
+        "price": 1300
+      },
+      {
+        "code": "$PRMY1",
+        "group": "PREMIUM_PACKAGE",
+        "price": 0
+      },
+      {
+        "code": "$SC04",
+        "group": "SUPER_CHARGER",
+        "price": 0
+      },
+      {
+        "code": "$MDLY",
+        "group": "MODEL",
+        "price": 54900
+      },
+      {
+        "code": "$WY21P",
+        "group": "WHEELS",
+        "price": 0
+      },
+      {
+        "code": "$SLR1",
+        "group": "SPOILER",
+        "price": 0
+      },
+      {
+        "code": "$MTY05",
+        "group": "TRIM",
+        "price": 27700
+      },
+      {
+        "code": "$PL31",
+        "group": "PEDALS",
+        "price": 0
+      },
+      {
+        "code": "$SPTY1",
+        "group": "SPORT_PACKAGE",
+        "price": 0
+      },
+      {
+        "code": "$STY5S",
+        "group": "REAR_SEATS",
+        "price": 0
+      },
+      {
+        "code": "$CPF0",
+        "group": "CONNECTIVITY",
+        "price": 0
+      },
+      {
+        "code": "$TW01",
+        "group": "TOWING",
+        "price": 1300
+      }
+    ],
+    "OrderFee": {
+      "type": "order_fee",
+      "value": 0
+    },
+    "OriginalDeliveryDate": null,
+    "OriginalInCustomerGarageDate": null,
+    "PAINT": [
+      "SILVER"
+    ],
+    "PlannedGADailyDate": "2021-08-10T00:00:00",
+    "PreownedWarrantyEligibility": null,
+    "Price": 95800,
+    "PurchasePrice": 95800,
+    "ROOF": null,
+    "RefurbishmentCompletionETA": null,
+    "SalesMetro": "Toronto",
+    "SalesNotes": "DO NOT RELEASE UNTIL REAR CASTING REPAIR COMPLETE",
+    "StateProvince": "ON",
+    "StateProvinceLongName": "ON",
+    "TRIM": [
+      "LRAWDP"
+    ],
+    "TaxScheme": null,
+    "ThirdPartyHistoryUrl": null,
+    "TilburgFactoryGatedDate": null,
+    "TilburgGAInDate": null,
+    "TitleReceivedOwnershipTransferDate": null,
+    "TitleStatus": "NEW",
+    "TitleSubtype": [
+      "BRANDNEW"
+    ],
+    "TotalPrice": 0,
+    "TransportFees": {
+      "exemptVRL": [],
+      "fees": [],
+      "metro_fees": []
+    },
+    "TrimCode": "$MTY05",
+    "TrimName": "Long Range All-Wheel Drive Performance",
+    "Trt": 5236,
+    "TrtName": "Vaughan-Woodbridge Chrislea",
+    "UsedVehiclePhotosCompletedDate": null,
+    "VIN": "5YJY284_200531e92d639e8059c1b1777355fdfa",
+    "Variant": null,
+    "VehicleHistory": null,
+    "VehicleRegion": "ON",
+    "VrlName": "Vaughan-Woodbridge Chrislea",
+    "WHEELS": [
+      "TWENTY_ONE"
+    ],
+    "WarrantyBatteryExpDate": "0001-01-01T00:00:00Z",
+    "WarrantyBatteryIsExpired": false,
+    "WarrantyBatteryMile": 192000,
+    "WarrantyBatteryYear": 8,
+    "WarrantyData": {
+      "UsedVehicleLimitedWarrantyMile": 0,
+      "UsedVehicleLimitedWarrantyYear": 0,
+      "WarrantyBatteryExpDate": "0001-01-01T00:00:00Z",
+      "WarrantyBatteryIsExpired": false,
+      "WarrantyBatteryMile": 192000,
+      "WarrantyBatteryYear": 8,
+      "WarrantyDriveUnitExpDate": "0001-01-01T00:00:00Z",
+      "WarrantyDriveUnitMile": 192000,
+      "WarrantyDriveUnitYear": 8,
+      "WarrantyMile": 80000,
+      "WarrantyVehicleExpDate": "0001-01-01T00:00:00Z",
+      "WarrantyVehicleIsExpired": false,
+      "WarrantyYear": 4
+    },
+    "WarrantyDriveUnitExpDate": "0001-01-01T00:00:00Z",
+    "WarrantyDriveUnitMile": 192000,
+    "WarrantyDriveUnitYear": 8,
+    "WarrantyMile": 80000,
+    "WarrantyVehicleExpDate": "0001-01-01T00:00:00Z",
+    "WarrantyVehicleIsExpired": false,
+    "WarrantyYear": 4,
+    "Year": 2021,
+    "UsedVehicleLimitedWarrantyMile": 0,
+    "UsedVehicleLimitedWarrantyYear": 0,
+    "DeliveryDateDisplay": true,
+    "Hash": "284_200531e92d639e8059c1b1777355fdfa",
+    "Odometer": 12,
+    "OptionCodeSpecs": {
+      "C_SPECS": {
+        "code": "C_SPECS",
+        "name": "Specs",
+        "options": [
+          {
+            "code": "SPECS_ACCELERATION",
+            "name": "3.7 s",
+            "long_name": "3.7 seconds",
+            "description": "0-100 km/h",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "SPECS_TOP_SPEED",
+            "name": "250 km/h",
+            "long_name": "250 kilometers per hour",
+            "description": "Top Speed",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "SPECS_RANGE",
+            "name": "488 km",
+            "long_name": "488 kilometers",
+            "description": "range (EPA est.)",
+            "group": null,
+            "list": null,
+            "period": null
+          }
+        ]
+      },
+      "C_DESIGN": {
+        "code": "C_DESIGN",
+        "name": "Design",
+        "options": []
+      },
+      "C_CALLOUTS": {
+        "code": "C_CALLOUTS",
+        "name": "Callout Features",
+        "options": [
+          {
+            "code": "$APF2",
+            "name": "Full Self-Driving Capability",
+            "long_name": "",
+            "description": "Autopilot",
+            "group": "AUTOPILOT",
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "PCT1M",
+            "name": "30-Day Premium Connectivity Trial",
+            "long_name": null,
+            "description": "30-Day Premium Connectivity Trial",
+            "group": "CONNECTIVITY",
+            "list": [
+              "satelliteMaps",
+              "musicStreaming",
+              "videoStreaming",
+              "caraoke",
+              "internetBrowser"
+            ],
+            "period": "30-Day"
+          }
+        ]
+      },
+      "C_OPTS": {
+        "code": "C_OPTS",
+        "name": "Options",
+        "options": [
+          {
+            "code": "$PMNG",
+            "name": "Midnight Silver Metallic Paint",
+            "long_name": "",
+            "description": "Midnight Silver Metallic",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "$WY21P",
+            "name": "21’’ Überturbine Wheels",
+            "long_name": "",
+            "description": "21’’ Überturbine Wheels",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "$INPB1",
+            "name": "All Black Premium Interior",
+            "long_name": "",
+            "description": "All Black Premium Interior",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "$APF2",
+            "name": "Full Self-Driving Capability",
+            "long_name": "",
+            "description": "Autopilot",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "$SPTY1",
+            "name": "Performance Upgrade",
+            "long_name": "",
+            "description": "Performance Upgrade",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "$STY5S",
+            "name": "Five Seat Interior",
+            "long_name": "",
+            "description": "Five Seat Interior",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "$TW01",
+            "name": "Tow Hitch",
+            "long_name": "",
+            "description": "Tow Hitch",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "$SLR1",
+            "name": "Carbon Fiber Spoiler",
+            "long_name": "",
+            "description": "Carbon Fiber Spoiler",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "$PL31",
+            "name": "Performance Pedals",
+            "long_name": "",
+            "description": "Performance Pedals",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "$BCYR",
+            "name": "Performance Brakes",
+            "long_name": "",
+            "description": "Performance Brakes",
+            "group": null,
+            "list": null,
+            "period": null
+          }
+        ]
+      }
+    },
+    "CompositorViewsCustom": {
+      "isProductWithCustomViews": false,
+      "externalZoom": {
+        "order": 1.4,
+        "details": 1,
+        "search": 1.3
+      }
+    },
+    "IsRangeStandard": true,
+    "MetroName": "Toronto",
+    "geoPoints": [
+      [
+        "43.793733,-79.547436",
+        5236
+      ]
+    ],
+    "HasMarketingOptions": true,
+    "IsFactoryGated": true,
+    "DetailsUrl": "https://www.tesla.com/en_CA/my/order/5YJY284_200531e92d639e8059c1b1777355fdfa"
+  }
