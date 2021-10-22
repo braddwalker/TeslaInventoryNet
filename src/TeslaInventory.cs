@@ -70,10 +70,6 @@ namespace TeslaInventoryNet
                 },
                 offset = criteria.Offset,
                 count = criteria.Count,
-                /*
-                outsideOffset = 0,
-                outsideSearch = false
-                */
             });
 
             // Don't get me started on this...
@@ -113,8 +109,6 @@ namespace TeslaInventoryNet
             }
             else 
             {
-                //logger.LogDebug(response.Content);
-
                 // Check for API errors first
                 var error = JsonConvert.DeserializeAnonymousType(response.Content, new { Error = "", Code = 0});
                 if (error.Code > 0)
@@ -140,7 +134,7 @@ namespace TeslaInventoryNet
                 // generate the image URLs
                 foreach (var vehicle in results.Vehicles)
                 {
-                    vehicle.DetailsUrl = BuildDetailsUrl(vehicle.Vin, vehicle.Model, criteria.Condition, location);
+                    vehicle.DetailsUrl = BuildDetailsUrl(vehicle.Vin, vehicle.Model, location);
                     vehicle.CompositorUrls = new CompositorUrls();
 
                     if (!string.IsNullOrWhiteSpace(vehicle.CompositorViews.FrontView))
@@ -168,20 +162,11 @@ namespace TeslaInventoryNet
         /// </summary>
         /// <param name="vin">The vehicle vin</param>
         /// <param name="model">The vehicle model</param>
-        /// <param name="condition">The vehicle condition</param>
         /// <param name="location">The location this vehicle exists in</param>
         /// <returns></returns>
-        public string BuildDetailsUrl(string vin, string model, string condition, Location location)
+        public string BuildDetailsUrl(string vin, string model, Location location)
         {
-            // build the details URL
-            if (location == Location.US || location == Location.DE)
-            {
-                return $"https://www.tesla.com/{location.Language}_{location.Market}/{model}/order/{vin}";
-            }
-            else 
-            {
-                return $"https://www.tesla.com/{location.Language}_{location.Market}/{condition}/{vin}";
-            }
+            return $"https://www.tesla.com/{location.Language}_{location.Market}/{model}/order/{vin}";
         }
 
         private string BuildImageUrl(string viewName, Vehicle vehicle)

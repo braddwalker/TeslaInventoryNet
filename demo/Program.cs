@@ -16,7 +16,8 @@ namespace TeslaInventoryNet.Demo
 
             var logger = loggerFactory.CreateLogger<Program>();
             var tesla = new TeslaInventory(loggerFactory.CreateLogger<TeslaInventory>());
-            var location = Location.US;
+            var location = Location.DE;
+            var culture = new CultureInfo($"{location.Language}-{location.Market}");
 
             tesla.Search(location, new SearchCriteria() { Model = "m3", Condition = "new", Count = 100},
                 (results) => {
@@ -25,14 +26,16 @@ namespace TeslaInventoryNet.Demo
                     foreach (var result in results.Vehicles)
                     {
                         logger.LogInformation(result.DetailsUrl
-                                    + $"\n{result.Year} {result.Model} - {result.InventoryPrice.ToString("C0", new CultureInfo($"{location.Language}-{location.Market}"))}"
+                                    + $"\n{result.Year} {result.Model} - {result.InventoryPrice.ToString("C0", culture)}"
                                     + $"\n{result.TrimName}" + (result.IsDemo ? " Demo" : "")
                                     + $"\n{result.OptionCodeData.Where(x => x.Group == "PAINT").Select(x => x.Name).FirstOrDefault()}"
                                     + (result.OptionCodeData.Any(x => x.Group == "REAR_SEATS") ? $"\n{result.OptionCodeData.FirstOrDefault(x => x.Group == "REAR_SEATS").Name}" : "")
                                     + (result.OptionCodeData.Any(x => x.Code == "$APPB") ? $"\n{result.OptionCodeData.FirstOrDefault(x => x.Code == "$APPB").Name}" : "")
                                     + (result.OptionCodeData.Any(x => x.Code == "$APF2") ? $"\n{result.OptionCodeData.FirstOrDefault(x => x.Code == "$APF2").Name}" : "")
-                                    + $"\nFactory: {result.FactoryCode}"
+                                    + $"\n{result.Odometer.ToString("N0", culture)} {result.OdometerType}"
                                     + $"\n{result.SalesMetro ?? result.City}, {((location == Location.US) ? result.StateProvince : result.CountryCode)}"
+                                    
+                                    + $"\nFactory: {result.FactoryCode}"
                                     + $"\n{result.CompositorUrls.FrontView}\n");
 
                         //Console.WriteLine(result.ToString());
