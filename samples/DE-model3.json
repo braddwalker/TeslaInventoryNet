@@ -1,0 +1,613 @@
+{
+    "InTransit": false,
+    "ADL_OPTS": null,
+    "AUTOPILOT": [
+      "ENHANCED_AUTOPILOT",
+      "AUTOPILOT"
+    ],
+    "ActualGAInDate": "2021-09-01T02:26:45",
+    "AddToInventoryReason": null,
+    "BATTERY": null,
+    "CABIN_CONFIG": null,
+    "CPORefurbishmentStatus": null,
+    "CPOWarrantyType": null,
+    "City": "Kirchdorf",
+    "CompositorViews": {
+      "frontView": "STUD_3QTR",
+      "sideView": "SIDE",
+      "interiorView": "STUD_SEAT"
+    },
+    "CompositorUrls": {
+      "frontView": "https://static-assets.tesla.com/v1/compositor/?model=m3&view=STUD_3QTR&size=1441&bkba_opt=2&options=$MT337,$MT337,$MT337,$APPB,$APBS,$DV2W,$IBW1,$PPMR,$PRM30,$SC04,$MDL3,$W40B,$MT337,$CPF0,$RSF0",
+      "sideView": "https://static-assets.tesla.com/v1/compositor/?model=m3&view=SIDE&size=1441&bkba_opt=2&options=$MT337,$MT337,$MT337,$APPB,$APBS,$DV2W,$IBW1,$PPMR,$PRM30,$SC04,$MDL3,$W40B,$MT337,$CPF0,$RSF0",
+      "interiorView": "https://static-assets.tesla.com/v1/compositor/?model=m3&view=STUD_SEAT&size=1441&bkba_opt=2&options=$MT337,$MT337,$MT337,$APPB,$APBS,$DV2W,$IBW1,$PPMR,$PRM30,$SC04,$MDL3,$W40B,$MT337,$CPF0,$RSF0"
+    },
+    "CountryCode": "DE",
+    "CountryCodes": [
+      "DE"
+    ],
+    "CountryOfOrigin": "DE",
+    "CurrencyCode": "EUR",
+    "CurrencyCodes": "EUR",
+    "DECOR": null,
+    "DRIVE": null,
+    "Decommissioned": false,
+    "DestinationHandlingFee": 0,
+    "Discount": 0,
+    "discountPercentages": 0,
+    "DisplayWarranty": false,
+    "DocumentSyncDate": "2021-10-21T02:01:31.741512Z",
+    "EtaToCurrent": "2021-10-20T07:06:56",
+    "FactoryCode": "GF03",
+    "FixedAssets": false,
+    "FlexibleOptionsData": [
+      {
+        "code": "$APF2",
+        "description": "Volles Potenzial für autonomes Fahren",
+        "group": "AUTOPILOT",
+        "long_name": "Volles Potenzial für autonomes Fahren",
+        "name": "Volles Potenzial für autonomes Fahren",
+        "price": 7500
+      }
+    ],
+    "HEADLINER": null,
+    "HOVStatus": null,
+    "HasDamagePhotos": false,
+    "HasOptionCodeData": true,
+    "INTERIOR": [
+      "PREMIUM_WHITE"
+    ],
+    "InspectionDocumentGuid": null,
+    "InventoryPrice": 50170,
+    "IsAvailableForMatch": true,
+    "IsDemo": false,
+    "IsLegacy": false,
+    "IsSoftMatched": false,
+    "IsTegra": false,
+    "Language": "de",
+    "Languages": [
+      "de"
+    ],
+    "LastTransformationSuccess": true,
+    "LeaseAvailabilityDate": null,
+    "LexiconDefaultOptions": [
+      {
+        "code": "$CPF0",
+        "description": "Standard-Konnektivität",
+        "group": "CONNECTIVITY",
+        "long_name": "Standard-Konnektivität",
+        "name": "Standard-Konnektivität"
+      },
+      {
+        "code": "$SC04",
+        "description": "Supercharger-Zugang + Pay-As-You-Go",
+        "group": "SUPER_CHARGER",
+        "long_name": "Supercharger-Zugang + Pay-As-You-Go",
+        "name": "Supercharger-Zugang + Pay-As-You-Go"
+      }
+    ],
+    "ListingReasons": null,
+    "ListingType": "public",
+    "ListingTypes": "public",
+    "LoanDetails": null,
+    "ManufacturingOptionCodeList": "AD15,AF00,APF1,APH4,AU3D,BC3B,BTF0,RNG0,CDM0,CH15,CODE,DRLH,DV2W,FC02,FG3B,FM3S,GLCN,HL32,HM30,ID3A,IL31,LT03,MDL3,MR31,PPMR,PC30,REEU,RF3G,RS3H,S3PW,SA3P,SC04,STCP,SU3C,T3MC,TM00,TW00,UT3P,W40B,WR00,ZINV,MI02,PL30,SLR0,ST33,BG30,OSSB,AUF2,RSF0,ILF0,FGF0,CPF0,P3WS,HP31,PT01,RL31,LVB1,RD02,SWF0,PP02,VC00,LS01",
+    "MarketingInUseDate": null,
+    "MatchType": "MANUAL",
+    "Model": "m3",
+    "MonroneyPrice": 0,
+    "NeedsReview": false,
+    "OdometerType": "Km",
+    "OptionCodeData": [
+      {
+        "acceleration_unit_long": "km/h",
+        "acceleration_unit_short": "km/h",
+        "acceleration_value": "0-100",
+        "code": "$MT337",
+        "group": "SPECS_ACCELERATION",
+        "price": 0,
+        "unit_long": "s",
+        "unit_short": "Sek.",
+        "value": "5.6",
+        "range_source": null,
+        "description": null,
+        "long_name": null,
+        "name": null
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$MT337",
+        "group": "SPECS_TOP_SPEED",
+        "price": 0,
+        "unit_long": "km/h",
+        "unit_short": "km/h",
+        "value": "225",
+        "range_source": null,
+        "description": null,
+        "long_name": null,
+        "name": null
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$MT337",
+        "group": "SPECS_RANGE",
+        "price": 0,
+        "unit_long": "Kilometer",
+        "unit_short": "km",
+        "value": "448",
+        "range_source": "WLTP",
+        "description": null,
+        "long_name": null,
+        "name": null
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$APPB",
+        "group": "AUTOPILOT",
+        "price": 3800,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Enhanced Autopilot",
+        "long_name": "Enhanced Autopilot",
+        "name": "Enhanced Autopilot"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$APBS",
+        "group": "AUTOPILOT",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Autopilot",
+        "long_name": "Autopilot",
+        "name": "Autopilot"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$DV2W",
+        "group": "DRIVE_MODE",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Hinterradantrieb",
+        "long_name": "Hinterradantrieb",
+        "name": "Hinterradantrieb"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$IBW1",
+        "group": "INTERIOR",
+        "price": 1200,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Innenraum schwarz und weiß",
+        "long_name": "Partieller Premium-Innenraum schwarz und weiß",
+        "name": "Innenraum schwarz und weiß"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$PPMR",
+        "group": "PAINT",
+        "price": 2200,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Red Multi-Coat",
+        "long_name": "Red Multi-Coat Lackierung",
+        "name": "Red Multi-Coat"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$PRM30",
+        "group": "PREMIUM_PACKAGE",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "<p>Sie können den Innenraum mit Zusatzmerkmalen und Premium-Materialien aufwerten.</p><ul><li><span>Premium-Innenraum mit ausgesuchten Materialien, offenporigem Holzdekor, Glasdach, Premium-Sitzen mit Sitzheizung und vier USB-Anschlüssen</span></li><li><span>Vordersitze mit elektrischer 12-Wegeverstellung, elektrisch verstellbare Lenksäule und Seitenspiegel, Fahrerprofilspeicher für individuelle Einstellung</span></li><li><span>Premium-Audiosystem mit Hochtönern, Surround-Lautsprechern und Subwoofern für ultimativen Power-Sound</span></li></ul>",
+        "long_name": "Partieller Premium-Innenraum",
+        "name": "Partieller Premium-Innenraum"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$SC04",
+        "group": "SUPER_CHARGER",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Supercharger-Zugang + Pay-As-You-Go",
+        "long_name": "Supercharger-Zugang + Pay-As-You-Go",
+        "name": "Supercharger-Zugang + Pay-As-You-Go"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$MDL3",
+        "group": "MODEL",
+        "price": 41990,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Die Auslieferung beginnt in den USA und richtet sich nach Bestelldatum und gewählten Optionen.",
+        "long_name": "Model 3 2021",
+        "name": "Model 3 2021"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$W40B",
+        "group": "WHEELS",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "18-Zoll Aero-Felgen",
+        "long_name": "18-Zoll Aero-Felgen",
+        "name": "18-Zoll Aero-Felgen"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$MT337",
+        "group": "TRIM",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Standard Plus Hinterradantrieb",
+        "long_name": "Standard Plus Hinterradantrieb",
+        "name": "Standard Plus Hinterradantrieb"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$CPF0",
+        "group": "CONNECTIVITY",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Standard-Konnektivität",
+        "long_name": "Standard-Konnektivität",
+        "name": "Standard-Konnektivität"
+      },
+      {
+        "acceleration_unit_long": null,
+        "acceleration_unit_short": null,
+        "acceleration_value": null,
+        "code": "$RSF0",
+        "group": "HEATED_SEAT",
+        "price": 0,
+        "unit_long": null,
+        "unit_short": null,
+        "value": null,
+        "range_source": null,
+        "description": "Keine beheizten Rücksitze",
+        "long_name": "Keine beheizten Rücksitze",
+        "name": "Keine beheizten Rücksitze"
+      }
+    ],
+    "OptionCodeList": "$APPB,$APBS,$DV2W,$IBW1,$PPMR,$PRM30,$SC04,$MDL3,$W40B,$MT337,$CPF0,$RSF0",
+    "OptionCodeListDisplayOnly": null,
+    "OptionCodePricing": [
+      {
+        "code": "$MDL3",
+        "group": "MODEL",
+        "price": 41990
+      },
+      {
+        "code": "$APBS",
+        "group": "AUTOPILOT_PACKAGE",
+        "price": 0
+      },
+      {
+        "code": "$APPB",
+        "group": "AUTOPILOT_FIRMWARE",
+        "price": 3800
+      },
+      {
+        "code": "$CPF0",
+        "group": "CONNECTIVITY",
+        "price": 0
+      },
+      {
+        "code": "$DV2W",
+        "group": "DRIVE_MODE",
+        "price": 0
+      },
+      {
+        "code": "$IBW1",
+        "group": "INTERIOR",
+        "price": 1200
+      },
+      {
+        "code": "$MT337",
+        "group": "TRIM",
+        "price": 0
+      },
+      {
+        "code": "$PRM30",
+        "group": "PREMIUM_PACKAGE",
+        "price": 0
+      },
+      {
+        "code": "$PPMR",
+        "group": "PAINT",
+        "price": 2200
+      },
+      {
+        "code": "$SC04",
+        "group": "SUPER_CHARGER",
+        "price": 0
+      },
+      {
+        "code": "$W40B",
+        "group": "WHEELS",
+        "price": 0
+      },
+      {
+        "code": "$RSF0",
+        "group": "HEATED_SEAT",
+        "price": 0
+      }
+    ],
+    "OrderFee": {
+      "type": "order_fee",
+      "value": 0
+    },
+    "OriginalDeliveryDate": null,
+    "OriginalInCustomerGarageDate": null,
+    "PAINT": [
+      "RED"
+    ],
+    "PlannedGADailyDate": "2021-09-01T00:00:00",
+    "PreownedWarrantyEligibility": null,
+    "Price": 50170,
+    "PurchasePrice": 49190,
+    "ROOF": null,
+    "RefurbishmentCompletionETA": null,
+    "SalesMetro": null,
+    "SalesNotes": null,
+    "StateProvince": null,
+    "StateProvinceLongName": null,
+    "TRIM": [
+      "SRPRWD"
+    ],
+    "TaxScheme": null,
+    "ThirdPartyHistoryUrl": null,
+    "TilburgFactoryGatedDate": null,
+    "TilburgGAInDate": null,
+    "TitleReceivedOwnershipTransferDate": null,
+    "TitleStatus": "NEW",
+    "TitleSubtype": [
+      "BRANDNEW"
+    ],
+    "TotalPrice": 50170,
+    "TransportFees": {
+      "exemptVRL": [],
+      "fees": [],
+      "metro_fees": []
+    },
+    "TrimCode": "$MT337",
+    "TrimName": "Standard Plus Hinterradantrieb",
+    "Trt": 21134,
+    "TrtName": "EU-DE-Muenchen - Haag Delivery Center",
+    "UsedVehiclePhotosCompletedDate": null,
+    "VIN": "LRW3202_ee2c0b85ae7ff3bcee143a5487a3f633",
+    "Variant": null,
+    "VehicleHistory": null,
+    "VehicleRegion": "",
+    "VrlName": "EU-DE-Muenchen - Haag Delivery Center",
+    "WHEELS": [
+      "EIGHTEEN"
+    ],
+    "WarrantyBatteryExpDate": "0001-01-01T00:00:00Z",
+    "WarrantyBatteryIsExpired": false,
+    "WarrantyBatteryMile": 160000,
+    "WarrantyBatteryYear": 8,
+    "WarrantyData": {
+      "UsedVehicleLimitedWarrantyMile": 0,
+      "UsedVehicleLimitedWarrantyYear": 0,
+      "WarrantyBatteryExpDate": "0001-01-01T00:00:00Z",
+      "WarrantyBatteryIsExpired": false,
+      "WarrantyBatteryMile": 160000,
+      "WarrantyBatteryYear": 8,
+      "WarrantyDriveUnitExpDate": "0001-01-01T00:00:00Z",
+      "WarrantyDriveUnitMile": 160000,
+      "WarrantyDriveUnitYear": 8,
+      "WarrantyMile": 80000,
+      "WarrantyVehicleExpDate": "0001-01-01T00:00:00Z",
+      "WarrantyVehicleIsExpired": false,
+      "WarrantyYear": 4
+    },
+    "WarrantyDriveUnitExpDate": "0001-01-01T00:00:00Z",
+    "WarrantyDriveUnitMile": 160000,
+    "WarrantyDriveUnitYear": 8,
+    "WarrantyMile": 80000,
+    "WarrantyVehicleExpDate": "0001-01-01T00:00:00Z",
+    "WarrantyVehicleIsExpired": false,
+    "WarrantyYear": 4,
+    "Year": 2021,
+    "UsedVehicleLimitedWarrantyMile": 0,
+    "UsedVehicleLimitedWarrantyYear": 0,
+    "DeliveryDateDisplay": true,
+    "Hash": "202_ee2c0b85ae7ff3bcee143a5487a3f633",
+    "Odometer": 9,
+    "OptionCodeSpecs": {
+      "C_SPECS": {
+        "code": "C_SPECS",
+        "name": "Specs",
+        "options": [
+          {
+            "code": "SPECS_ACCELERATION",
+            "name": "5,6 Sek.",
+            "long_name": "5,6 s",
+            "description": "0-100 km/h",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "SPECS_TOP_SPEED",
+            "name": "225 km/h",
+            "long_name": "225 km/h",
+            "description": "Höchstgeschwindigkeit",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "SPECS_RANGE",
+            "name": "448 km",
+            "long_name": "448 Kilometer",
+            "description": "Reichweite (WLTP)",
+            "group": null,
+            "list": null,
+            "period": null
+          }
+        ]
+      },
+      "C_DESIGN": {
+        "code": "C_DESIGN",
+        "name": "Design",
+        "options": []
+      },
+      "C_CALLOUTS": {
+        "code": "C_CALLOUTS",
+        "name": "Callout Features",
+        "options": [
+          {
+            "code": "$APF1",
+            "name": "Enhanced Autopilot",
+            "long_name": "",
+            "description": "Autopilot",
+            "group": "AUTOPILOT",
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "PCT1M",
+            "name": "30 Tage Premium-Konnektivität-Testphase",
+            "long_name": null,
+            "description": "30 Tage Premium-Konnektivität-Testphase",
+            "group": "CONNECTIVITY",
+            "list": [
+              "satelliteMaps",
+              "musicStreaming",
+              "videoStreaming",
+              "caraoke",
+              "internetBrowser"
+            ],
+            "period": "30 Tage"
+          }
+        ]
+      },
+      "C_OPTS": {
+        "code": "C_OPTS",
+        "name": "Options",
+        "options": [
+          {
+            "code": "$PPMR",
+            "name": "Red Multi-Coat Lackierung",
+            "long_name": "",
+            "description": "Red Multi-Coat",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "$W40B",
+            "name": "18-Zoll Aero-Felgen",
+            "long_name": "",
+            "description": "18-Zoll Aero-Felgen",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "$IBW1",
+            "name": "Partieller Premium-Innenraum schwarz und weiß",
+            "long_name": "",
+            "description": "Innenraum schwarz und weiß",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "$APF1",
+            "name": "Enhanced Autopilot",
+            "long_name": "",
+            "description": "Autopilot",
+            "group": null,
+            "list": null,
+            "period": null
+          },
+          {
+            "code": "$RSF0",
+            "name": "Beheizte Vordersitze",
+            "long_name": "",
+            "description": "Keine beheizten Rücksitze",
+            "group": null,
+            "list": null,
+            "period": null
+          }
+        ]
+      }
+    },
+    "CompositorViewsCustom": {
+      "isProductWithCustomViews": false,
+      "externalZoom": {
+        "order": 1.4,
+        "details": 1,
+        "search": 1.3
+      }
+    },
+    "IsRangeStandard": true,
+    "MetroName": null,
+    "geoPoints": [
+      [
+        "48.1670241,12.1608264",
+        21134
+      ]
+    ],
+    "HasMarketingOptions": true,
+    "IsFactoryGated": true,
+    "DetailsUrl": "https://www.tesla.com/de_DE/m3/order/LRW3202_ee2c0b85ae7ff3bcee143a5487a3f633"
+  }

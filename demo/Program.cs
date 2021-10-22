@@ -18,7 +18,7 @@ namespace TeslaInventoryNet.Demo
             var tesla = new TeslaInventory(loggerFactory.CreateLogger<TeslaInventory>());
             var location = Location.US;
 
-            tesla.Search(location, new SearchCriteria() { Model = "m3", Condition = "used", Count = 100},
+            tesla.Search(location, new SearchCriteria() { Model = "m3", Condition = "new", Count = 100},
                 (results) => {
                     logger.LogInformation($"Found {results.TotalMatchesFound} vehicles total, {results.Vehicles.Length} vehicles returned");
                     
@@ -28,10 +28,14 @@ namespace TeslaInventoryNet.Demo
                                     + $"\n{result.Year} {result.Model} - {result.InventoryPrice.ToString("C0", new CultureInfo($"{location.Language}-{location.Market}"))}"
                                     + $"\n{result.TrimName}" + (result.IsDemo ? " Demo" : "")
                                     + $"\n{result.OptionCodeData.Where(x => x.Group == "PAINT").Select(x => x.Name).FirstOrDefault()}"
-                                    + (result.Autopilot.Contains("AUTOPILOT_FULL_SELF_DRIVING") ? "\nFull Self-Driving Capability" : "")
+                                    + (result.OptionCodeData.Any(x => x.Group == "REAR_SEATS") ? $"\n{result.OptionCodeData.FirstOrDefault(x => x.Group == "REAR_SEATS").Name}" : "")
+                                    + (result.OptionCodeData.Any(x => x.Code == "$APPB") ? $"\n{result.OptionCodeData.FirstOrDefault(x => x.Code == "$APPB").Name}" : "")
+                                    + (result.OptionCodeData.Any(x => x.Code == "$APF2") ? $"\n{result.OptionCodeData.FirstOrDefault(x => x.Code == "$APF2").Name}" : "")
                                     + $"\nFactory: {result.FactoryCode}"
                                     + $"\n{result.SalesMetro ?? result.City}, {((location == Location.US) ? result.StateProvince : result.CountryCode)}"
-                                    + $"\n{result.CompositorUrls.FrontView}");
+                                    + $"\n{result.CompositorUrls.FrontView}\n");
+
+                        //Console.WriteLine(result.ToString());
                     }
                 }
             );

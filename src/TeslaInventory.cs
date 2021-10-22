@@ -70,9 +70,28 @@ namespace TeslaInventoryNet
                 },
                 offset = criteria.Offset,
                 count = criteria.Count,
+                /*
                 outsideOffset = 0,
                 outsideSearch = false
+                */
             });
+
+            // Don't get me started on this...
+            if (location == Location.CA && criteria.Condition.Equals("used", StringComparison.CurrentCultureIgnoreCase))
+            {
+                query = JsonConvert.SerializeObject(new {
+                    query = new {
+                        model = criteria.Model,
+                        condition = criteria.Condition,
+                        market = location.Market,
+                        language = location.Language
+                    },
+                    offset = criteria.Offset,
+                    count = criteria.Count,
+                    outsideOffset = 0,
+                    outsideSearch = false
+                });
+            }
 
             logger.LogDebug($"Query: {query}");
 
