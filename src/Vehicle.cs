@@ -479,7 +479,7 @@ namespace TeslaInventoryNet
         public TransportFees TransportFees { get; set; }
         public string TrimCode { get; set; }
         public string TrimName { get; set; }
-        public int Trt { get; set; }
+        public int? Trt { get; set; }
         public string TrtName { get; set; }
         public DateTime? UsedVehiclePhotosCompletedDate { get; set; }
 
