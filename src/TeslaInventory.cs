@@ -171,7 +171,7 @@ namespace TeslaInventoryNet
 
         private string BuildImageUrl(string viewName, Vehicle vehicle)
         {
-            return $"{COMPOSITOR_URL}?model={vehicle.Model}&view={viewName}&size=1441&bkba_opt=2&options={string.Join(',', vehicle.OptionCodeData.Select(x => x.Code))}";
+            return $"{COMPOSITOR_URL}?model={vehicle.Model}&view={viewName}&size=1441&bkba_opt=2&options={string.Join(',', vehicle.OptionCodeList)}";
         }
     }
 }
