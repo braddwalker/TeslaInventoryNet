@@ -131,7 +131,7 @@ namespace TeslaInventoryNet
                     results.Vehicles = JsonConvert.DeserializeObject<Vehicle[]>(JsonConvert.SerializeObject(raw.exact)) ?? new Vehicle[0];
                 }
 
-                // generate the image URLs
+                // generate the custom URLs
                 foreach (var vehicle in results.Vehicles)
                 {
                     vehicle.DetailsUrl = BuildDetailsUrl(vehicle.Vin, vehicle.Model, location);
