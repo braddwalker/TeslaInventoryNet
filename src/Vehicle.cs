@@ -387,7 +387,6 @@ namespace TeslaInventoryNet
         public string CPOWarrantyType { get; set; }
         public string City { get; set; }
         public CompositorViews CompositorViews { get; set; }
-        public CompositorUrls CompositorUrls { get; set; }
         public string CountryCode { get; set; }
         public string[] CountryCodes { get; set; }
         public string CountryOfOrigin { get; set; }
@@ -517,6 +516,19 @@ namespace TeslaInventoryNet
         public object[] geoPoints { get; set; }
         public bool HasMarketingOptions { get; set; }
         public bool IsFactoryGated { get; set; }
+
+        /// <summary>
+        /// This is a custom attribute that conains the compositor image URLs
+        /// for each of the main vehicle views.
+        /// </summary>
+        /// <value>Compositor image URLs</value>
+        public CompositorUrls CompositorUrls { get; set; }
+
+        /// <summary>
+        /// This is a custom attribute that contins the URL of the vehicle's detail page on the
+        /// Tesla website.
+        /// </summary>
+        /// <value>The vehicle detail page URL</value>
         public string DetailsUrl { get; set; }
 
         public override string ToString()

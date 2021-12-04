@@ -5,7 +5,6 @@ using RestSharp;
 using System;
 using System.Net;
 using System.Runtime.InteropServices;
-using System.Linq;
 
 namespace TeslaInventoryNet
 {
@@ -131,7 +130,7 @@ namespace TeslaInventoryNet
                     results.Vehicles = JsonConvert.DeserializeObject<Vehicle[]>(JsonConvert.SerializeObject(raw.exact)) ?? new Vehicle[0];
                 }
 
-                // generate the image URLs
+                // Generate the custom vehicle attributes
                 foreach (var vehicle in results.Vehicles)
                 {
                     vehicle.DetailsUrl = BuildDetailsUrl(vehicle.Vin, vehicle.Model, location);
