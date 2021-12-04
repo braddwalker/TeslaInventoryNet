@@ -23,7 +23,7 @@
                     
                     foreach (var result in results.Vehicles)
                     {
-                        logger.LogInformation($"https://www.tesla.com/{result.Model}/order/{result.Vin}"
+                        logger.LogInformation(result.DetailsUrl
                             + $"\n{result.Year} {result.Model}"
                             + $"\n{result.TrimName}" + (result.IsDemo ? " Demo" : "")
                             + $"\n{result.OptionCodeData.Where(x => x.Group == "PAINT").Select(x => x.Name).FirstOrDefault()}"
