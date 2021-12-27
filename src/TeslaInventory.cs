@@ -115,19 +115,21 @@ namespace TeslaInventoryNet
                     throw new Exception($"Error calling Tesla API - {error.Code}: {error.Error} - {JsonConvert.SerializeObject(query)}");
                 }
 
+                var settings = new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore };
+
                 // Deserialize the actual results and return the relevant portions
                 // Start with a dynamic object because results can come back in more than one format
-                dynamic raw = JsonConvert.DeserializeObject(response.Content);
+                dynamic raw = JsonConvert.DeserializeObject(response.Content, settings);
                 var results = new SearchResult();
 
                 if (raw.results is JArray)
                 {
-                    results = JsonConvert.DeserializeObject<SearchResult>(response.Content);
+                    results = JsonConvert.DeserializeObject<SearchResult>(response.Content, settings);
                 }
-                else 
+                else
                 {
                     results.TotalMatchesFound = raw.total_matches_found;
-                    results.Vehicles = JsonConvert.DeserializeObject<Vehicle[]>(JsonConvert.SerializeObject(raw.exact)) ?? new Vehicle[0];
+                    results.Vehicles = JsonConvert.DeserializeObject<Vehicle[]>(JsonConvert.SerializeObject(raw.exact), settings) ?? new Vehicle[0];
                 }
 
                 // Generate the custom vehicle attributes
