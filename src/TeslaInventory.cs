@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Serialization;
 using RestSharp;
 using System;
 using System.Net;
@@ -21,6 +22,7 @@ namespace TeslaInventoryNet
 
         private readonly ILogger<TeslaInventory> logger;
         private IRestClient client = null;
+        private JsonSerializerSettings jsonSettings = null;
 
         /// <summary>
         /// Delegate to process all of the search results at once
@@ -38,6 +40,15 @@ namespace TeslaInventoryNet
         {
             this.logger = logger;
             this.client = client ?? new RestClient();
+            this.jsonSettings = new JsonSerializerSettings()
+            {
+                Error = delegate(object sender, ErrorEventArgs args)
+                {
+                    logger.LogWarning($"Json parse error: {args.ErrorContext.Error.Message}");
+                    args.ErrorContext.Handled = true;
+                },
+                NullValueHandling = NullValueHandling.Ignore
+            };
         }
 
         /// <summary>
@@ -115,21 +126,19 @@ namespace TeslaInventoryNet
                     throw new Exception($"Error calling Tesla API - {error.Code}: {error.Error} - {JsonConvert.SerializeObject(query)}");
                 }
 
-                var settings = new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore };
-
                 // Deserialize the actual results and return the relevant portions
                 // Start with a dynamic object because results can come back in more than one format
-                dynamic raw = JsonConvert.DeserializeObject(response.Content, settings);
+                dynamic raw = JsonConvert.DeserializeObject(response.Content, jsonSettings);
                 var results = new SearchResult();
 
                 if (raw.results is JArray)
                 {
-                    results = JsonConvert.DeserializeObject<SearchResult>(response.Content, settings);
+                    results = JsonConvert.DeserializeObject<SearchResult>(response.Content, jsonSettings);
                 }
                 else
                 {
                     results.TotalMatchesFound = raw.total_matches_found;
-                    results.Vehicles = JsonConvert.DeserializeObject<Vehicle[]>(JsonConvert.SerializeObject(raw.exact), settings) ?? new Vehicle[0];
+                    results.Vehicles = JsonConvert.DeserializeObject<Vehicle[]>(JsonConvert.SerializeObject(raw.exact), jsonSettings) ?? new Vehicle[0];
                 }
 
                 // Generate the custom vehicle attributes
