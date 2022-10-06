@@ -434,7 +434,7 @@ namespace TeslaInventoryNet
         public string ListingReasons { get; set; }
         public string ListingType { get; set; }
         public string ListingTypes { get; set; }
-        public LoanDetails LoanDetails { get; set; }
+        public LoanDetails[] LoanDetails { get; set; }
         public string ManufacturingOptionCodeList { get; set; }
         public DateTime? MarketingInUseDate { get; set; }
         public string MatchType { get; set; }
