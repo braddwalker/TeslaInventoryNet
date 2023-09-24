@@ -1,13 +1,13 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Microsoft.Extensions.Logging;
 using System.Globalization;
+using System.Threading.Tasks;
 
 namespace TeslaInventoryNet.Demo
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var loggerFactory = LoggerFactory.Create(builder => {
                 builder.AddConsole();
@@ -20,6 +20,8 @@ namespace TeslaInventoryNet.Demo
 
             var culture = new CultureInfo($"{location.Language}-{location.Market}");
 
+            var results = await tesla.Search(location, new SearchCriteria() { Model = "m3", Condition = "new", Count = 100});
+            /*
             tesla.Search(location, new SearchCriteria() { Model = "m3", Condition = "new", Count = 100},
                 (results) => {
                     logger.LogInformation($"Found {results.TotalMatchesFound} vehicles total, {results.Vehicles.Length} vehicles returned");
@@ -41,6 +43,7 @@ namespace TeslaInventoryNet.Demo
                     }
                 }
             );
+            */
         }
     }
 }

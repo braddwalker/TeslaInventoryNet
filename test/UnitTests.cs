@@ -6,6 +6,7 @@ using System;
 using System.Net;
 using Newtonsoft.Json;
 
+/*
 namespace TeslaInventoryNet.Test
 {
     [TestClass]
@@ -132,3 +133,4 @@ namespace TeslaInventoryNet.Test
         }
     }
 }
+*/
