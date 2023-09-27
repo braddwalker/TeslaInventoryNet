@@ -43,7 +43,7 @@ namespace TeslaInventoryNet
         public TeslaInventory(ILogger<TeslaInventory> logger, [Optional] HttpClient httpClient)
         {
             this.logger = logger;
-            this.httpClient = httpClient ?? new HttpClient()
+            this.httpClient = httpClient ?? new HttpClient(new Http2Handler())
             {
                 BaseAddress = new Uri(TESLA_API),
                 DefaultRequestVersion = HttpVersion.Version20,
