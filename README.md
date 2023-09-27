@@ -50,14 +50,10 @@ https://static-assets.tesla.com/v1/compositor/?model=m3&view=STUD_3QTR&size=1441
 ```
 
 ## API
-### TeslaInventory(logger, [Optional]restClientImpl])
+### TeslaInventory(logger)
 #### logger
 Type: `ILogger<TeslaInventory>`
 <br/>The logger to use to log any debug/info messages
-
-#### restClientImpl
-Type: `IRestClient`
-<br/>An optional `IRestClient` implementation to use for invoking API calls
 
 ### Search(location, searchCriteria)
 #### location
@@ -76,4 +72,4 @@ Type: `SearchCriteria`
 **TeslaInventoryNet** © Brad Walker, released under the [MIT](https://github.com/braddwalker/TeslaInventoryNet/blob/master/LICENSE.md) License.<br>
 Authored and maintained by Brad Walker with help from [contributors](https://github.com/braddwalker/TeslaInventoryNet/contributors).
 
-> GitHub [Brad Walker](https://github.com/braddwalker) · Twitter [@braddwalker](https://twitter.com/braddwalker)
+> GitHub [Brad Walker](https://github.com/braddwalker) · Twitter [@offcamberdad](https://twitter.com/offcamberdad)
