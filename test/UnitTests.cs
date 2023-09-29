@@ -1,20 +1,22 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Microsoft.Extensions.Logging;
-using RestSharp;
 using System;
 using System.Net;
 using Newtonsoft.Json;
+using System.Threading.Tasks;
+using System.Net.Http;
+using RichardSzalay.MockHttp;
 
-/*
 namespace TeslaInventoryNet.Test
 {
     [TestClass]
     public class UnitTest1
     {
         private TeslaInventory tesla = null;
+        private MockHttpMessageHandler httpHandler = null;
 
-        private ILogger<TeslaInventory> CreateLogger()
+        private static ILogger<TeslaInventory> CreateLogger()
         {
             return new Mock<ILogger<TeslaInventory>>().Object;
         }
@@ -22,14 +24,18 @@ namespace TeslaInventoryNet.Test
         [TestInitialize]
         public void Initialize()
         {
-            tesla = new TeslaInventory(CreateLogger());
+            httpHandler = new MockHttpMessageHandler();
+            var httpClient = httpHandler.ToHttpClient();
+            httpClient.BaseAddress = new Uri("https://foo");
+
+            tesla = new TeslaInventory(CreateLogger(), httpClient);
         }
 
         [TestMethod]
         [ExpectedException(typeof(Exception))]
-        public void Search_Invalid_Location()
+        public async Task Search_Invalid_Location()
         {
-            tesla.Search(new Location()
+            await tesla.Search(new Location()
             {
                 Language = "foo",
                 Market = "foo"
@@ -37,33 +43,33 @@ namespace TeslaInventoryNet.Test
         }
 
         [TestMethod]
-        public void Search_CA_Used_NotNull()
+        public async Task Search_CA_Used_NotNull()
         {
-            Assert.IsNotNull(tesla.Search(Location.CA, new SearchCriteria() { Model = "m3", Condition = "used"}));
+            Assert.IsNotNull(await tesla.Search(Location.CA, new SearchCriteria() { Model = "m3", Condition = "used"}));
         }
 
         [TestMethod]
-        public void Search_FR_Used_NotNull()
+        public async Task Search_FR_Used_NotNull()
         {
-            Assert.IsNotNull(tesla.Search(Location.FR, new SearchCriteria() { Model = "m3", Condition = "used"}));
+            Assert.IsNotNull(await tesla.Search(Location.FR, new SearchCriteria() { Model = "m3", Condition = "used"}));
         }
 
         [TestMethod]
-        public void Search_UK_Used_NotNull()
+        public async Task Search_UK_Used_NotNull()
         {
-            Assert.IsNotNull(tesla.Search(Location.UK, new SearchCriteria() { Model = "m3", Condition = "used"}));
+            Assert.IsNotNull(await tesla.Search(Location.UK, new SearchCriteria() { Model = "m3", Condition = "used"}));
         }
 
         [TestMethod]
-        public void Search_Invalid_Count()
+        public async Task Search_Invalid_Count()
         {
-            Assert.IsNotNull(tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "new", Count = 10000000}));
+            Assert.IsNotNull(await tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "new", Count = 10000000}));
         }
 
         [TestMethod]
-        public void Search_US_New_NotNull()
+        public async Task Search_US_New_NotNull()
         {
-            Assert.IsNotNull(tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "new"}));
+            Assert.IsNotNull(await tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "new"}));
         }
 
         [TestMethod]
@@ -81,56 +87,50 @@ namespace TeslaInventoryNet.Test
         }
 
         [TestMethod]
-        public void Search_Invalid_Model()
+        public async Task Search_Invalid_Model()
         {
-            Assert.IsNotNull(tesla.Search(Location.US, new SearchCriteria() { Model = "foo", Condition = "used"}));
+            Assert.IsNotNull(await tesla.Search(Location.US, new SearchCriteria() { Model = "foo", Condition = "used"}));
         }
 
         [TestMethod]
-        public void Search_Invalid_Condition()
+        public async Task Search_Invalid_Condition()
         {
-            Assert.IsNotNull(tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "foo"}));
+            Assert.IsNotNull(await tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "foo"}));
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception))]
-        public void Search_Null_Response()
+        [ExpectedException(typeof(NotImplementedException))]
+        public async Task Search_Null_Response()
         {
-            var client = new Mock<IRestClient>();
-            client.Setup(x => x.Execute(It.IsAny<IRestRequest>())).Returns<IRestResponse>(null);
+            httpHandler.AddBackendDefinition(
+                httpHandler.Fallback.Throw(new NotImplementedException()));
 
-            tesla = new TeslaInventory(CreateLogger(), client.Object);   
-            tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "foo"});
-        }
-
-        [TestMethod]
-        [ExpectedException(typeof(Exception))]
-        public void Search_Invalid_HTTP_Response()
-        {
-            var response = new Mock<IRestResponse>();
-            response.Setup(x => x.StatusCode).Returns(HttpStatusCode.NotFound);
-
-            var client = new Mock<IRestClient>();
-            client.Setup(x => x.Execute(It.IsAny<IRestRequest>())).Returns(response.Object);
-
-            tesla = new TeslaInventory(CreateLogger(), client.Object);   
-            tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "foo"});
+            await tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "foo"});
         }
 
         [TestMethod]
         [ExpectedException(typeof(Exception))]
-        public void Search_Invalid_API_Error()
+        public async Task Search_Invalid_HTTP_Response()
         {
-            var response = new Mock<IRestResponse>();
-            response.Setup(x => x.StatusCode).Returns(HttpStatusCode.OK);
-            response.Setup(x => x.Content).Returns(JsonConvert.SerializeObject(new { Error = "Test error", Code = 100}));
+            httpHandler.AddBackendDefinition(
+                httpHandler.Fallback.Respond(req => new HttpResponseMessage(HttpStatusCode.NotFound)));
 
-            var client = new Mock<IRestClient>();
-            client.Setup(x => x.Execute(It.IsAny<IRestRequest>())).Returns(response.Object);
+            await tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "foo"});
+        }
 
-            tesla = new TeslaInventory(CreateLogger(), client.Object);   
-            tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "foo"});
+        [TestMethod]
+        [ExpectedException(typeof(Exception))]
+        public async Task Search_Invalid_API_Error()
+        {
+            var resp = new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new StringContent(JsonConvert.SerializeObject(new { Error = "Test error", Code = 100 }))
+            };
+
+            httpHandler.AddBackendDefinition(
+                httpHandler.Fallback.Respond(req => resp));
+
+            await tesla.Search(Location.US, new SearchCriteria() { Model = "m3", Condition = "foo"});
         }
     }
 }
-*/

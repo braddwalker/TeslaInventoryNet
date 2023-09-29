@@ -43,7 +43,7 @@ namespace TeslaInventoryNet
         public TeslaInventory(ILogger<TeslaInventory> logger, [Optional] HttpClient httpClient)
         {
             this.logger = logger;
-            this.httpClient = httpClient ?? new HttpClient(new Http2Handler())
+            this.httpClient = httpClient ?? new HttpClient()
             {
                 BaseAddress = new Uri(TESLA_API),
                 DefaultRequestVersion = HttpVersion.Version20,
@@ -115,11 +115,6 @@ namespace TeslaInventoryNet
             queryParams["query"] = query;
 
             var response = await httpClient.GetAsync($"?{queryParams}");
-
-            if (response == null)
-            {
-                throw new Exception("Error calling Tesla API - null response");
-            }
 
             if (response.StatusCode != HttpStatusCode.OK)
             {
